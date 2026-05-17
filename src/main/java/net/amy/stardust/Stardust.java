@@ -1,5 +1,7 @@
 package net.amy.stardust;
 
+import net.amy.stardust.block.ModBlocks;
+import net.amy.stardust.creativemodtab.ModCreativeModeTabs;
 import net.amy.stardust.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,7 +15,11 @@ public class Stardust implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModCreativeModeTabs.registerModCreativeModeTabs();
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		//Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap;
+
 	}
 }

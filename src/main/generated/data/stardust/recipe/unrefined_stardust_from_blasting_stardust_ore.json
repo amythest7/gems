@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 150,
+  "experience": 0.5,
+  "group": "stardust",
+  "ingredient": "stardust:stardust_ore",
+  "result": {
+    "id": "stardust:unrefined_stardust"
+  }
+}

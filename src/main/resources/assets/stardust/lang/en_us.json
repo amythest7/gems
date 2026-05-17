@@ -1,4 +1,53 @@
 {
   "item.stardust.stardust": "Stardust",
-  "item.stardust.crystallised_stardust": "Crystallised Stardust"
+  "item.stardust.unrefined_stardust": "Unrefined Stardust",
+  "item.stardust.crystallised_stardust": "Crystallised Stardust",
+  "item.stardust.stardust_glaive": "Stardust Glaive",
+
+  "item.stardust.ruby": "Ruby",
+  "item.stardust.sapphire": "Sapphire",
+  "item.stardust.topaz": "Topaz",
+  "item.stardust.citrine": "Citrine",
+  "item.stardust.amethyst": "Amethyst",
+  "item.stardust.spinel": "Spinel",
+
+  "item.stardust.gold_ring_ruby": "Ruby Gold Ring",
+  "item.stardust.gold_ring_sapphire": "Sapphire Gold Ring",
+  "item.stardust.gold_ring_topaz": "Topaz Gold Ring",
+  "item.stardust.gold_ring_citrine": "Citrine Gold Ring",
+  "item.stardust.gold_ring_amethyst": "Amethyst Gold Ring",
+  "item.stardust.gold_ring_spinel": "Spinel Gold Ring",
+  "item.stardust.gold_ring": "Gold Ring",
+  "item.stardust.gold_ring_emerald": "Emerald Gold Ring",
+  "item.stardust.gold_ring_diamond": "Diamond Gold Ring",
+
+  "item.stardust.stardust_ring_ruby": "Ruby Stardust Ring",
+  "item.stardust.stardust_ring_sapphire": "Sapphire Stardust Ring",
+  "item.stardust.stardust_ring_topaz": "Topaz Stardust Ring",
+  "item.stardust.stardust_ring_citrine": "Citrine Stardust Ring",
+  "item.stardust.stardust_ring_amethyst": "Amethyst Stardust Ring",
+  "item.stardust.stardust_ring_spinel": "Spinel Stardust Ring",
+  "item.stardust.stardust_ring": "Stardust Ring",
+  "item.stardust.stardust_ring_emerald": "Emerald Stardust Ring",
+  "item.stardust.stardust_ring_diamond": "Diamond Stardust Ring",
+
+  "block.stardust.crystallised_stardust_block": "Block of Crystallised Stardust",
+  "block.stardust.stardust_ore": "Stardust Ore",
+
+
+  "block.stardust.ruby_ore": "Ruby Ore",
+  "block.stardust.deepslate_ruby_ore": "Deepslate Ruby Ore",
+  "block.stardust.sapphire_ore": "Sapphire Ore",
+  "block.stardust.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.stardust.topaz_ore": "Topaz Ore",
+  "block.stardust.deepslate_topaz_ore": "Deepslate Topaz Ore",
+  "block.stardust.amethyst_ore": "Amethyst Ore",
+  "block.stardust.deepslate_amethyst_ore": "Deepslate Amethyst Ore",
+  "block.stardust.citrine_ore": "Citrine Ore",
+  "block.stardust.deepslate_citrine_ore": "Deepslate Citrine Ore",
+  "block.stardust.spinel_ore": "Spinel Ore",
+  "block.stardust.deepslate_spinel_ore": "Deepslate Spinel Ore",
+
+  "creativemodetab.stardust.stardust_items": "Stardust",
+  "creativemodetab.stardust.gem_items": "Gems"
 }

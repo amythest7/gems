@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "rings",
+  "ingredients": [
+    "stardust:gold_ring",
+    "minecraft:diamond"
+  ],
+  "result": {
+    "id": "stardust:gold_ring_diamond"
+  }
+}
