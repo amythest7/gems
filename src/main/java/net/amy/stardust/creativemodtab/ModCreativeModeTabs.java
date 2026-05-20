@@ -2,7 +2,6 @@ package net.amy.stardust.creativemodtab;
 
 import net.amy.stardust.Stardust;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
-import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -14,7 +13,6 @@ import static net.amy.stardust.Stardust.MOD_ID;
 import static net.amy.stardust.block.ModBlocks.*;
 import static net.amy.stardust.item.ModItems.*;
 import static net.minecraft.world.item.Items.*;
-import net.minecraft.world.level.block.Blocks;
 
 public class ModCreativeModeTabs {
 
@@ -31,6 +29,7 @@ public class ModCreativeModeTabs {
 
                         output.accept(STARDUST_RING);
                         output.accept(AMETHYST_STARDUST_RING);
+                        output.accept(AQUAMARINE_STARDUST_RING);
                         output.accept(CITRINE_STARDUST_RING);
                         output.accept(DIAMOND_STARDUST_RING);
                         output.accept(EMERALD_STARDUST_RING);
@@ -51,6 +50,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativemodetab.stardust.gem_items"))
                     .displayItems((parameters, output) -> {
                         output.accept(AMETHYST);
+                        output.accept(AQUAMARINE);
                         output.accept(CITRINE);
                         output.accept(DIAMOND);
                         output.accept(EMERALD);
@@ -60,6 +60,7 @@ public class ModCreativeModeTabs {
                         output.accept(TOPAZ);
 
                         output.accept(AMETHYST_ORE);
+                        output.accept(AQUAMARINE_ORE);
                         output.accept(CITRINE_ORE);
                         output.accept(DIAMOND_ORE);
                         output.accept(EMERALD_ORE);
@@ -69,6 +70,7 @@ public class ModCreativeModeTabs {
                         output.accept(TOPAZ_ORE);
 
                         output.accept(DEEPSLATE_AMETHYST_ORE);
+                        output.accept(DEEPSLATE_AQUAMARINE_ORE);
                         output.accept(DEEPSLATE_CITRINE_ORE);
                         output.accept(DEEPSLATE_DIAMOND_ORE);
                         output.accept(DEEPSLATE_EMERALD_ORE);
@@ -78,6 +80,7 @@ public class ModCreativeModeTabs {
                         output.accept(DEEPSLATE_TOPAZ_ORE);
 
                         output.accept(GOLD_RING);
+                        output.accept(AQUAMARINE_GOLD_RING);
                         output.accept(AMETHYST_GOLD_RING);
                         output.accept(CITRINE_GOLD_RING);
                         output.accept(DIAMOND_GOLD_RING);
@@ -86,8 +89,17 @@ public class ModCreativeModeTabs {
                         output.accept(SAPPHIRE_GOLD_RING);
                         output.accept(SPINEL_GOLD_RING);
                         output.accept(TOPAZ_GOLD_RING);
-                        
 
+                        output.accept(NETHERITE_RING);
+                        output.accept(AMETHYST_NETHERITE_RING);
+                        output.accept(AQUAMARINE_NETHERITE_RING);
+                        output.accept(CITRINE_NETHERITE_RING);
+                        output.accept(DIAMOND_NETHERITE_RING);
+                        output.accept(EMERALD_NETHERITE_RING);
+                        output.accept(RUBY_NETHERITE_RING);
+                        output.accept(SAPPHIRE_NETHERITE_RING);
+                        output.accept(SPINEL_NETHERITE_RING);
+                        output.accept(TOPAZ_NETHERITE_RING);
 
 
 

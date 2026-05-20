@@ -1,4 +1,4 @@
-package net.amy.stardust.tags;
+package net.amy.stardust.tag;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;

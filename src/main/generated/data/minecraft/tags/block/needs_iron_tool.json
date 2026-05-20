@@ -11,6 +11,8 @@
     "stardust:citrine_ore",
     "stardust:deepslate_citrine_ore",
     "stardust:spinel_ore",
-    "stardust:deepslate_spinel_ore"
+    "stardust:deepslate_spinel_ore",
+    "stardust:aquamarine_ore",
+    "stardust:deepslate_aquamarine_ore"
   ]
 }

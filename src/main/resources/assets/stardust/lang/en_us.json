@@ -31,6 +31,16 @@
   "item.stardust.stardust_ring_emerald": "Emerald Stardust Ring",
   "item.stardust.stardust_ring_diamond": "Diamond Stardust Ring",
 
+  "item.stardust.netherite_ring_ruby": "Ruby Netherite Ring",
+  "item.stardust.netherite_ring_sapphire": "Sapphire Netherite Ring",
+  "item.stardust.netherite_ring_topaz": "Topaz Netherite Ring",
+  "item.stardust.netherite_ring_citrine": "Citrine Netherite Ring",
+  "item.stardust.netherite_ring_amethyst": "Amethyst Netherite Ring",
+  "item.stardust.netherite_ring_spinel": "Spinel Netherite Ring",
+  "item.stardust.netherite_ring": "Netherite Ring",
+  "item.stardust.netherite_ring_emerald": "Emerald Netherite Ring",
+  "item.stardust.netherite_ring_diamond": "Diamond Netherite Ring",
+
   "block.stardust.crystallised_stardust_block": "Block of Crystallised Stardust",
   "block.stardust.stardust_ore": "Stardust Ore",
 
@@ -47,6 +57,14 @@
   "block.stardust.deepslate_citrine_ore": "Deepslate Citrine Ore",
   "block.stardust.spinel_ore": "Spinel Ore",
   "block.stardust.deepslate_spinel_ore": "Deepslate Spinel Ore",
+
+
+  "item.stardust.aquamarine": "Aquamarine",
+  "block.stardust.aquamarine_ore": "Aquamarine Ore",
+  "block.stardust.deepslate_aquamarine_ore": "Deepslate Aquamarine Ore",
+  "item.stardust.netherite_ring_aquamarine": "Aquamarine Netherite Ring",
+  "item.stardust.stardust_ring_aquamarine": "Aquamarine Stardust Ring",
+  "item.stardust.gold_ring_aquamarine": "Aquamarine Gold Ring",
 
   "creativemodetab.stardust.stardust_items": "Stardust",
   "creativemodetab.stardust.gem_items": "Gems"

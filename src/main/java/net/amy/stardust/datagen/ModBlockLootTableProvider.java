@@ -18,7 +18,6 @@ import java.util.concurrent.CompletableFuture;
 
 import static net.amy.stardust.block.ModBlocks.*;
 import static net.amy.stardust.item.ModItems.*;
-import static net.minecraft.world.item.Items.*;
 
 public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     public ModBlockLootTableProvider(FabricPackOutput packOutput, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -46,6 +45,9 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         
         add(SPINEL_ORE, createOreDrop(SPINEL_ORE, SPINEL));
         add(DEEPSLATE_SPINEL_ORE, createOreDrop(DEEPSLATE_SPINEL_ORE, SPINEL));
+
+        add(AQUAMARINE_ORE, createOreDrop(AQUAMARINE_ORE, AQUAMARINE));
+        add(DEEPSLATE_AQUAMARINE_ORE, createOreDrop(DEEPSLATE_AQUAMARINE_ORE, AQUAMARINE));
 
 
     }

@@ -3,13 +3,13 @@
 	"id": "stardust",
 	"version": "${version}",
 	"name": "Stardust",
-	"description": "wo i have nwo idea",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Amethyst"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "",
-		"sources": "https://github.com/amythest7/stardust"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/stardust/icon.png",
@@ -27,7 +27,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",
-		"minecraft": "~26.1.2",
+		"minecraft": "~26.1.1",
 		"java": ">=25",
 		"fabric-api": "*"
 	}

@@ -4,7 +4,6 @@ import net.amy.stardust.block.ModBlocks;
 import net.amy.stardust.creativemodtab.ModCreativeModeTabs;
 import net.amy.stardust.item.ModItems;
 import net.fabricmc.api.ModInitializer;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

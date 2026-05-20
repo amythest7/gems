@@ -6,8 +6,8 @@ import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
 
-import static net.amy.stardust.item.ModItems.*;
 import static net.amy.stardust.block.ModBlocks.*;
+import static net.amy.stardust.item.ModItems.*;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {
@@ -31,6 +31,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(DEEPSLATE_CITRINE_ORE);
         blockModelGenerators.createTrivialCube(SPINEL_ORE);
         blockModelGenerators.createTrivialCube(DEEPSLATE_SPINEL_ORE);
+        blockModelGenerators.createTrivialCube(AQUAMARINE_ORE);
+        blockModelGenerators.createTrivialCube(DEEPSLATE_AQUAMARINE_ORE);
 
 
     }
@@ -48,6 +50,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(AMETHYST, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(CITRINE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(SPINEL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(AQUAMARINE, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(RUBY_GOLD_RING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(SAPPHIRE_GOLD_RING, ModelTemplates.FLAT_ITEM);
@@ -68,6 +71,21 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(STARDUST_RING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(EMERALD_STARDUST_RING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(DIAMOND_STARDUST_RING, ModelTemplates.FLAT_ITEM);
+        
+        itemModelGenerators.generateFlatItem(RUBY_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(SAPPHIRE_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(TOPAZ_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(AMETHYST_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(CITRINE_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(SPINEL_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(EMERALD_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(DIAMOND_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(AQUAMARINE_GOLD_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(AQUAMARINE_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(AQUAMARINE_STARDUST_RING, ModelTemplates.FLAT_ITEM);
+        
 
     }
 }

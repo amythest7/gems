@@ -2,21 +2,16 @@ package net.amy.stardust.item.custom;
 
 
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ToolMaterial;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Tool;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
-import net.minecraft.world.level.Level;
 
 import java.util.List;
 
@@ -26,7 +21,7 @@ public class GlaiveItem extends Item {
     private static final Identifier INTERACTION_RANGE_MODIFIER_ID =
             Identifier.fromNamespaceAndPath(MOD_ID, "interaction_range_bonus");
 
-    public GlaiveItem(final ToolMaterial material, final float attackDamageBaseline, final float attackSpeedBaseline, final Item.Properties properties) {
+    public GlaiveItem(final ToolMaterial material, final float attackDamageBaseline, final float attackSpeedBaseline, final Properties properties) {
         super(properties.sword(material, attackDamageBaseline, attackSpeedBaseline));
     }
 

@@ -87,6 +87,16 @@ public class ModBlocks {
             properties.strength(4.5f, 3.0f)
                     .requiresCorrectToolForDrops()));
 
+    public static final Block AQUAMARINE_ORE = registerBlock("aquamarine_ore", properties -> new DropExperienceBlock(
+            UniformInt.of(3, 7),
+            properties.strength(3.0f, 3.0f)
+                    .requiresCorrectToolForDrops()));
+
+    public static final Block DEEPSLATE_AQUAMARINE_ORE = registerBlock("deepslate_aquamarine_ore", properties -> new DropExperienceBlock(
+            UniformInt.of(3, 7),
+            properties.strength(4.5f, 3.0f)
+                    .requiresCorrectToolForDrops()));
+
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of()

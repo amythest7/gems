@@ -4,7 +4,6 @@ import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Block;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -33,7 +32,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(CITRINE_ORE)
                 .add(DEEPSLATE_CITRINE_ORE)
                 .add(SPINEL_ORE)
-                .add(DEEPSLATE_SPINEL_ORE);
+                .add(DEEPSLATE_SPINEL_ORE)
+                .add(AQUAMARINE_ORE)
+                .add(DEEPSLATE_AQUAMARINE_ORE);
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(STARDUST_ORE)
@@ -51,7 +52,9 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(CITRINE_ORE)
                 .add(DEEPSLATE_CITRINE_ORE)
                 .add(SPINEL_ORE)
-                .add(DEEPSLATE_SPINEL_ORE);
+                .add(DEEPSLATE_SPINEL_ORE)
+                .add(AQUAMARINE_ORE)
+                .add(DEEPSLATE_AQUAMARINE_ORE);
 
     }
 }

@@ -4,7 +4,6 @@ import net.amy.stardust.block.ModBlocks;
 import net.amy.stardust.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.advancements.criterion.MinMaxBounds;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
@@ -170,6 +169,95 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(ModItems.STARDUST_RING)
                         .requires(ModItems.SPINEL)
                         .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
+                        .group("rings")
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModItems.NETHERITE_RING)
+                        .pattern("GGG")
+                        .pattern("GRG")
+                        .pattern("GGG")
+                        .define('G', Items.NETHERITE_SCRAP)
+                        .define('R', ModItems.GOLD_RING)
+                        .unlockedBy(getHasName(Items.NETHERITE_SCRAP), has(Items.NETHERITE_SCRAP))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.RUBY_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(ModItems.RUBY)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.EMERALD_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(Items.EMERALD)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.AMETHYST_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(ModItems.AMETHYST)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.TOPAZ_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.CITRINE_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(ModItems.CITRINE)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.DIAMOND_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(Items.DIAMOND)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.SPINEL_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(ModItems.SPINEL)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
+                        .group("rings")
+                        .save(output);
+                
+                
+
+                shapeless(RecipeCategory.MISC, ModItems.AQUAMARINE_GOLD_RING)
+                        .requires(ModItems.GOLD_RING)
+                        .requires(ModItems.AQUAMARINE)
+                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.AQUAMARINE_STARDUST_RING)
+                        .requires(ModItems.STARDUST_RING)
+                        .requires(ModItems.AQUAMARINE)
+                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
+                        .group("rings")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModItems.AQUAMARINE_NETHERITE_RING)
+                        .requires(ModItems.NETHERITE_RING)
+                        .requires(ModItems.AQUAMARINE)
+                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
                         .group("rings")
                         .save(output);
             }
