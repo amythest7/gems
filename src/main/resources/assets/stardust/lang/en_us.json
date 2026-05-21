@@ -67,5 +67,16 @@
   "item.stardust.gold_ring_aquamarine": "Aquamarine Gold Ring",
 
   "creativemodetab.stardust.stardust_items": "Stardust",
-  "creativemodetab.stardust.gem_items": "Gems"
+  "creativemodetab.stardust.gem_items": "Gems",
+
+  "block.stardust.ruby_lantern": "Ruby Lantern",
+  "block.stardust.sapphire_lantern": "Sapphire Lantern",
+  "block.stardust.topaz_lantern": "Topaz Lantern",
+  "block.stardust.citrine_lantern": "Citrine Lantern",
+  "block.stardust.amethyst_lantern": "Amethyst Lantern",
+  "block.stardust.spinel_lantern": "Spinel Lantern",
+  "block.stardust.stardust_lantern": "Stardust Lantern",
+  "block.stardust.emerald_lantern": "Emerald Lantern",
+  "block.stardust.aquamarine_lantern": "Aquamarine Lantern",
+  "block.stardust.empty_lantern": "Empty Lantern"
 }

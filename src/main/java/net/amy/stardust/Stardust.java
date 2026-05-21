@@ -20,5 +20,6 @@ public class Stardust implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		//Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap;
 
+
 	}
 }

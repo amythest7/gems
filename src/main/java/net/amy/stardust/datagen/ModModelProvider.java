@@ -34,6 +34,17 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(AQUAMARINE_ORE);
         blockModelGenerators.createTrivialCube(DEEPSLATE_AQUAMARINE_ORE);
 
+        blockModelGenerators.createLantern(STARDUST_LANTERN);
+        blockModelGenerators.createLantern(RUBY_LANTERN);
+        blockModelGenerators.createLantern(SAPPHIRE_LANTERN);
+        blockModelGenerators.createLantern(TOPAZ_LANTERN);
+        blockModelGenerators.createLantern(CITRINE_LANTERN);
+        blockModelGenerators.createLantern(EMERALD_LANTERN);
+        blockModelGenerators.createLantern(EMPTY_LANTERN);
+        blockModelGenerators.createLantern(AMETHYST_LANTERN);
+        blockModelGenerators.createLantern(AQUAMARINE_LANTERN);
+        blockModelGenerators.createLantern(SPINEL_LANTERN);
+
 
     }
 

@@ -11,8 +11,11 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 
 import java.util.function.Function;
 
@@ -96,6 +99,112 @@ public class ModBlocks {
             UniformInt.of(3, 7),
             properties.strength(4.5f, 3.0f)
                     .requiresCorrectToolForDrops()));
+
+    public static final Block STARDUST_LANTERN = registerBlock(
+            "stardust_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                    .forceSolidOn()
+                    .strength(3.5F)
+                    .sound(SoundType.LANTERN)
+                    .lightLevel(statex -> 15)
+                    .noOcclusion()
+                    .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block RUBY_LANTERN = registerBlock(
+            "ruby_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block SAPPHIRE_LANTERN = registerBlock(
+            "sapphire_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block TOPAZ_LANTERN = registerBlock(
+            "topaz_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block CITRINE_LANTERN = registerBlock(
+            "citrine_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block SPINEL_LANTERN = registerBlock(
+            "spinel_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block AQUAMARINE_LANTERN = registerBlock(
+            "aquamarine_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block AMETHYST_LANTERN = registerBlock(
+            "amethyst_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block EMPTY_LANTERN = registerBlock(
+            "empty_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 0)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block EMERALD_LANTERN = registerBlock(
+            "emerald_lantern",
+            properties -> new LanternBlock(
+                    properties.mapColor(MapColor.METAL)
+                            .forceSolidOn()
+                            .strength(3.5F)
+                            .sound(SoundType.LANTERN)
+                            .lightLevel(statex -> 15)
+                            .noOcclusion()
+                            .pushReaction(PushReaction.DESTROY)));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {

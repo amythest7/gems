@@ -34,7 +34,18 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(SPINEL_ORE)
                 .add(DEEPSLATE_SPINEL_ORE)
                 .add(AQUAMARINE_ORE)
-                .add(DEEPSLATE_AQUAMARINE_ORE);
+                .add(DEEPSLATE_AQUAMARINE_ORE)
+
+                .add(STARDUST_LANTERN)
+                .add(RUBY_LANTERN)
+                .add(SAPPHIRE_LANTERN)
+                .add(TOPAZ_LANTERN)
+                .add(CITRINE_LANTERN)
+                .add(EMERALD_LANTERN)
+                .add(EMPTY_LANTERN)
+                .add(AMETHYST_LANTERN)
+                .add(AQUAMARINE_LANTERN)
+                .add(SPINEL_LANTERN);
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(STARDUST_ORE)
@@ -54,7 +65,18 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(SPINEL_ORE)
                 .add(DEEPSLATE_SPINEL_ORE)
                 .add(AQUAMARINE_ORE)
-                .add(DEEPSLATE_AQUAMARINE_ORE);
+                .add(DEEPSLATE_AQUAMARINE_ORE)
+
+                .add(STARDUST_LANTERN)
+                .add(RUBY_LANTERN)
+                .add(SAPPHIRE_LANTERN)
+                .add(TOPAZ_LANTERN)
+                .add(CITRINE_LANTERN)
+                .add(EMERALD_LANTERN)
+                .add(EMPTY_LANTERN)
+                .add(AMETHYST_LANTERN)
+                .add(AQUAMARINE_LANTERN)
+                .add(SPINEL_LANTERN);
 
     }
 }

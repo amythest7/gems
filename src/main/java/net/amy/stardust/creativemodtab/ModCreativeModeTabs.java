@@ -39,6 +39,9 @@ public class ModCreativeModeTabs {
                         output.accept(TOPAZ_STARDUST_RING);
 
 
+                        output.accept(STARDUST_LANTERN);
+
+
 
 
                     })
@@ -100,6 +103,16 @@ public class ModCreativeModeTabs {
                         output.accept(SAPPHIRE_NETHERITE_RING);
                         output.accept(SPINEL_NETHERITE_RING);
                         output.accept(TOPAZ_NETHERITE_RING);
+
+                        output.accept(RUBY_LANTERN);
+                        output.accept(SAPPHIRE_LANTERN);
+                        output.accept(TOPAZ_LANTERN);
+                        output.accept(CITRINE_LANTERN);
+                        output.accept(EMERALD_LANTERN);
+                        output.accept(EMPTY_LANTERN);
+                        output.accept(AMETHYST_LANTERN);
+                        output.accept(AQUAMARINE_LANTERN);
+                        output.accept(SPINEL_LANTERN);
 
 
 

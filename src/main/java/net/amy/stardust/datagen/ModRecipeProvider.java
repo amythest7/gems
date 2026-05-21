@@ -12,6 +12,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CampfireCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -259,6 +260,79 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(ModItems.AQUAMARINE)
                         .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
                         .group("rings")
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.EMPTY_LANTERN)
+                        .pattern("III")
+                        .pattern("IGI")
+                        .pattern("III")
+                        .define('I', Items.IRON_NUGGET)
+                        .define('G', Blocks.TINTED_GLASS)
+                        .unlockedBy(getHasName(Blocks.TINTED_GLASS), has(Blocks.TINTED_GLASS))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.RUBY_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.RUBY)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.SAPPHIRE_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.SAPPHIRE)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.EMERALD_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(Items.EMERALD)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.AMETHYST_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.AMETHYST)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.TOPAZ_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.TOPAZ)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.CITRINE_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.CITRINE)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.SPINEL_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.SPINEL)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.STARDUST_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.STARDUST)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
+                        .save(output);
+
+                shapeless(RecipeCategory.MISC, ModBlocks.AQUAMARINE_LANTERN)
+                        .requires(ModBlocks.EMPTY_LANTERN)
+                        .requires(ModItems.AQUAMARINE)
+                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
+                        .group("gem_lanterns")
                         .save(output);
             }
             

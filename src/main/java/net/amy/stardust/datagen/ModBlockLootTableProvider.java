@@ -28,6 +28,17 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
     public void generate() {
         dropSelf(CRYSTALLISED_STARDUST_BLOCK);
 
+        dropSelf(STARDUST_LANTERN);
+        dropSelf(RUBY_LANTERN);
+        dropSelf(SAPPHIRE_LANTERN);
+        dropSelf(TOPAZ_LANTERN);
+        dropSelf(CITRINE_LANTERN);
+        dropSelf(EMERALD_LANTERN);
+        dropSelf(EMPTY_LANTERN);
+        dropSelf(AMETHYST_LANTERN);
+        dropSelf(AQUAMARINE_LANTERN);
+        dropSelf(SPINEL_LANTERN);
+
         add(STARDUST_ORE, createMultipleOreDrops(STARDUST_ORE, UNREFINED_STARDUST, 1f, 3f));
 
         add(SAPPHIRE_ORE, createOreDrop(SAPPHIRE_ORE, SAPPHIRE));

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "stardust:block/sapphire_lantern"
+    },
+    "hanging=true": {
+      "model": "stardust:block/sapphire_lantern_hanging"
+    }
+  }
+}

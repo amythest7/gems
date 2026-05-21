@@ -74,6 +74,8 @@ public class ModItems {
 
 
 
+
+
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(
                 BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name),

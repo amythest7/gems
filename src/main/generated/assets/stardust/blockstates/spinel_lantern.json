@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "stardust:block/spinel_lantern"
+    },
+    "hanging=true": {
+      "model": "stardust:block/spinel_lantern_hanging"
+    }
+  }
+}
