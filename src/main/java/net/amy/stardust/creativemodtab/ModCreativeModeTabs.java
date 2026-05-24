@@ -41,6 +41,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(STARDUST_LANTERN);
 
+                        output.accept(MUSIC_DISC_DESTRUCTOR);
+
 
 
 
@@ -61,6 +63,16 @@ public class ModCreativeModeTabs {
                         output.accept(SAPPHIRE);
                         output.accept(SPINEL);
                         output.accept(TOPAZ);
+
+                        output.accept(AMETHYST_GEM_BLOCK);
+                        output.accept(AQUAMARINE_BLOCK);
+                        output.accept(CITRINE_BLOCK);
+                        output.accept(DIAMOND_BLOCK);
+                        output.accept(EMERALD_BLOCK);
+                        output.accept(RUBY_BLOCK);
+                        output.accept(SAPPHIRE_BLOCK);
+                        output.accept(SPINEL_BLOCK);
+                        output.accept(TOPAZ_BLOCK);
 
                         output.accept(AMETHYST_ORE);
                         output.accept(AQUAMARINE_ORE);
@@ -113,6 +125,7 @@ public class ModCreativeModeTabs {
                         output.accept(AMETHYST_LANTERN);
                         output.accept(AQUAMARINE_LANTERN);
                         output.accept(SPINEL_LANTERN);
+
 
 
 

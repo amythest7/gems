@@ -45,7 +45,16 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(EMPTY_LANTERN)
                 .add(AMETHYST_LANTERN)
                 .add(AQUAMARINE_LANTERN)
-                .add(SPINEL_LANTERN);
+                .add(SPINEL_LANTERN)
+        
+                
+                .add(RUBY_BLOCK)
+                .add(SAPPHIRE_BLOCK)
+                .add(TOPAZ_BLOCK)
+                .add(CITRINE_BLOCK)
+                .add(AQUAMARINE_BLOCK)
+                .add(SPINEL_BLOCK)
+                .add(AMETHYST_GEM_BLOCK);
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(STARDUST_ORE)
@@ -76,7 +85,15 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(EMPTY_LANTERN)
                 .add(AMETHYST_LANTERN)
                 .add(AQUAMARINE_LANTERN)
-                .add(SPINEL_LANTERN);
+                .add(SPINEL_LANTERN)
+
+                .add(RUBY_BLOCK)
+                .add(SAPPHIRE_BLOCK)
+                .add(TOPAZ_BLOCK)
+                .add(CITRINE_BLOCK)
+                .add(AQUAMARINE_BLOCK)
+                .add(SPINEL_BLOCK)
+                .add(AMETHYST_GEM_BLOCK);
 
     }
 }

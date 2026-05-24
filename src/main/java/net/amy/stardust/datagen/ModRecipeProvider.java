@@ -334,6 +334,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
                         .group("gem_lanterns")
                         .save(output);
+
+                threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_BLOCK, ModItems.RUBY, getHasName(ModItems.RUBY));
+                threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_BLOCK, ModItems.SAPPHIRE, getHasName(ModItems.SAPPHIRE));
+                threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TOPAZ_BLOCK, ModItems.TOPAZ, getHasName(ModItems.TOPAZ));
+                threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.CITRINE_BLOCK, ModItems.CITRINE, getHasName(ModItems.CITRINE));
+                threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPINEL_BLOCK, ModItems.SPINEL, getHasName(ModItems.SPINEL));
+                threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AQUAMARINE_BLOCK, ModItems.AQUAMARINE, getHasName(ModItems.AQUAMARINE));
+                threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_GEM_BLOCK, ModItems.AMETHYST, getHasName(ModItems.AMETHYST));
+                
             }
             
             

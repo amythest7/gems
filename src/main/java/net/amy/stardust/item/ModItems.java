@@ -2,17 +2,22 @@ package net.amy.stardust.item;
 
 import net.amy.stardust.Stardust;
 import net.amy.stardust.item.custom.GlaiveItem;
+import net.amy.stardust.item.custom.GoldRingItem;
+import net.amy.stardust.item.custom.NetheriteRingItem;
+import net.amy.stardust.item.custom.StardustRingItem;
+import net.amy.stardust.sounds.ModSoundEvents;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.TooltipDisplay;
 
+import java.util.function.Consumer;
 import java.util.function.Function;
 
 import static net.amy.stardust.Stardust.MOD_ID;
@@ -31,40 +36,228 @@ public class ModItems {
     public static Item SPINEL = registerItem("spinel", Item::new);
     public static Item AQUAMARINE = registerItem("aquamarine", Item::new);
 
-    public static Item GOLD_RING = registerItem("gold_ring", Item::new);
-    public static Item RUBY_GOLD_RING = registerItem("gold_ring_ruby", Item::new);
-    public static Item SAPPHIRE_GOLD_RING = registerItem("gold_ring_sapphire", Item::new);
-    public static Item TOPAZ_GOLD_RING = registerItem("gold_ring_topaz", Item::new);
-    public static Item AMETHYST_GOLD_RING = registerItem("gold_ring_amethyst", Item::new);
-    public static Item CITRINE_GOLD_RING = registerItem("gold_ring_citrine", Item::new);
-    public static Item SPINEL_GOLD_RING = registerItem("gold_ring_spinel", Item::new);
-    public static Item EMERALD_GOLD_RING = registerItem("gold_ring_emerald", Item::new);
-    public static Item DIAMOND_GOLD_RING = registerItem("gold_ring_diamond", Item::new);
+    public static Item GOLD_RING = registerItem("gold_ring", GoldRingItem::new);
+    public static Item RUBY_GOLD_RING = registerItem("gold_ring_ruby", properties -> new GoldRingItem(properties.stacksTo(1), MobEffects.REGENERATION) {
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_ruby"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item SAPPHIRE_GOLD_RING = registerItem("gold_ring_sapphire", properties -> new GoldRingItem(properties, MobEffects.NIGHT_VISION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_sapphire"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item TOPAZ_GOLD_RING = registerItem("gold_ring_topaz", properties -> new GoldRingItem(properties, MobEffects.HASTE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_topaz"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item AMETHYST_GOLD_RING = registerItem("gold_ring_amethyst", properties -> new GoldRingItem(properties, MobEffects.ABSORPTION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_amethyst"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item CITRINE_GOLD_RING = registerItem("gold_ring_citrine", properties -> new GoldRingItem(properties, MobEffects.FIRE_RESISTANCE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_citrine"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item SPINEL_GOLD_RING = registerItem("gold_ring_spinel", properties -> new GoldRingItem(properties, MobEffects.SATURATION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_spinel"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item EMERALD_GOLD_RING = registerItem("gold_ring_emerald", properties -> new GoldRingItem(properties, MobEffects.HERO_OF_THE_VILLAGE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_emerald"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item DIAMOND_GOLD_RING = registerItem("gold_ring_diamond", properties -> new GoldRingItem(properties, MobEffects.SPEED){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_diamond"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
 
-    public static Item STARDUST_RING = registerItem("stardust_ring", Item::new);
-    public static Item RUBY_STARDUST_RING = registerItem("stardust_ring_ruby", Item::new);
-    public static Item SAPPHIRE_STARDUST_RING = registerItem("stardust_ring_sapphire", Item::new);
-    public static Item TOPAZ_STARDUST_RING = registerItem("stardust_ring_topaz", Item::new);
-    public static Item AMETHYST_STARDUST_RING = registerItem("stardust_ring_amethyst", Item::new);
-    public static Item CITRINE_STARDUST_RING = registerItem("stardust_ring_citrine", Item::new);
-    public static Item SPINEL_STARDUST_RING = registerItem("stardust_ring_spinel", Item::new);
-    public static Item EMERALD_STARDUST_RING = registerItem("stardust_ring_emerald", Item::new);
-    public static Item DIAMOND_STARDUST_RING = registerItem("stardust_ring_diamond", Item::new);
-
-    public static Item NETHERITE_RING = registerItem("netherite_ring", Item::new);
-    public static Item RUBY_NETHERITE_RING = registerItem("netherite_ring_ruby", Item::new);
-    public static Item SAPPHIRE_NETHERITE_RING = registerItem("netherite_ring_sapphire", Item::new);
-    public static Item TOPAZ_NETHERITE_RING = registerItem("netherite_ring_topaz", Item::new);
-    public static Item AMETHYST_NETHERITE_RING = registerItem("netherite_ring_amethyst", Item::new);
-    public static Item CITRINE_NETHERITE_RING = registerItem("netherite_ring_citrine", Item::new);
-    public static Item SPINEL_NETHERITE_RING = registerItem("netherite_ring_spinel", Item::new);
-    public static Item EMERALD_NETHERITE_RING = registerItem("netherite_ring_emerald", Item::new);
-    public static Item DIAMOND_NETHERITE_RING = registerItem("netherite_ring_diamond", Item::new);
-
-    public static Item AQUAMARINE_GOLD_RING = registerItem("gold_ring_aquamarine", Item::new);
-    public static Item AQUAMARINE_STARDUST_RING = registerItem("stardust_ring_aquamarine", Item::new);
-    public static Item AQUAMARINE_NETHERITE_RING = registerItem("netherite_ring_aquamarine", Item::new);
-
+    public static Item STARDUST_RING = registerItem("stardust_ring", StardustRingItem::new);
+    public static Item RUBY_STARDUST_RING = registerItem("stardust_ring_ruby", properties -> new StardustRingItem(properties, MobEffects.REGENERATION) {
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_ruby"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item SAPPHIRE_STARDUST_RING = registerItem("stardust_ring_sapphire", properties -> new StardustRingItem(properties, MobEffects.NIGHT_VISION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_sapphire"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item TOPAZ_STARDUST_RING = registerItem("stardust_ring_topaz", properties -> new StardustRingItem(properties, MobEffects.HASTE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_topaz"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item AMETHYST_STARDUST_RING = registerItem("stardust_ring_amethyst", properties -> new StardustRingItem(properties, MobEffects.ABSORPTION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_amethyst"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item CITRINE_STARDUST_RING = registerItem("stardust_ring_citrine", properties -> new StardustRingItem(properties, MobEffects.FIRE_RESISTANCE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_citrine"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item SPINEL_STARDUST_RING = registerItem("stardust_ring_spinel", properties -> new StardustRingItem(properties, MobEffects.SATURATION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_spinel"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item EMERALD_STARDUST_RING = registerItem("stardust_ring_emerald", properties -> new StardustRingItem(properties, MobEffects.HERO_OF_THE_VILLAGE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_emerald"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item DIAMOND_STARDUST_RING = registerItem("stardust_ring_diamond", properties -> new StardustRingItem(properties, MobEffects.SPEED){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_diamond"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item NETHERITE_RING = registerItem("netherite_ring", NetheriteRingItem::new);
+    public static Item RUBY_NETHERITE_RING = registerItem("netherite_ring_ruby", properties -> new NetheriteRingItem(properties, MobEffects.REGENERATION) {
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_ruby"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item SAPPHIRE_NETHERITE_RING = registerItem("netherite_ring_sapphire", properties -> new NetheriteRingItem(properties, MobEffects.NIGHT_VISION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_sapphire"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item TOPAZ_NETHERITE_RING = registerItem("netherite_ring_topaz", properties -> new NetheriteRingItem(properties, MobEffects.HASTE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_topaz"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item AMETHYST_NETHERITE_RING = registerItem("netherite_ring_amethyst", properties -> new NetheriteRingItem(properties, MobEffects.ABSORPTION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_amethyst"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item CITRINE_NETHERITE_RING = registerItem("netherite_ring_citrine", properties -> new NetheriteRingItem(properties, MobEffects.FIRE_RESISTANCE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_citrine"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item SPINEL_NETHERITE_RING = registerItem("netherite_ring_spinel", properties -> new NetheriteRingItem(properties, MobEffects.SATURATION){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_spinel"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item EMERALD_NETHERITE_RING = registerItem("netherite_ring_emerald", properties -> new NetheriteRingItem(properties, MobEffects.HERO_OF_THE_VILLAGE){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_emerald"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item DIAMOND_NETHERITE_RING = registerItem("netherite_ring_diamond", properties -> new NetheriteRingItem(properties, MobEffects.SPEED){
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_diamond"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item AQUAMARINE_GOLD_RING = registerItem("gold_ring_aquamarine", properties -> new GoldRingItem(properties, MobEffects.WATER_BREATHING) {
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.gold_ring_aquamarine"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item AQUAMARINE_NETHERITE_RING = registerItem("netherite_ring_aquamarine", properties -> new NetheriteRingItem(properties, MobEffects.WATER_BREATHING) {
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.netherite_ring_aquamarine"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item AQUAMARINE_STARDUST_RING = registerItem("stardust_ring_aquamarine", properties -> new StardustRingItem(properties, MobEffects.WATER_BREATHING) {
+        @Override
+        public void appendHoverText(ItemStack itemStack, TooltipContext context, TooltipDisplay display,
+                                    Consumer<Component> builder, TooltipFlag tooltipFlag) {
+            builder.accept(Component.translatable("tooltip.stardust.stardust_ring_aquamarine"));
+            super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
+        }
+    });
+    public static Item MUSIC_DISC_DESTRUCTOR = registerItem("music_disc_destructor", properties -> new Item(properties.stacksTo(1).rarity(Rarity.UNCOMMON).jukeboxPlayable(ModJukeboxSongs.DESTRUCTOR)));
+    
     public static Item STARDUST_GLAIVE = registerItem("stardust_glaive", properties -> new GlaiveItem(
             ToolMaterial.DIAMOND, 6f, -2.6f, properties
             .attributes(GlaiveItem.createAttributes(ToolMaterial.DIAMOND,6, -2.6f, 0.5f))

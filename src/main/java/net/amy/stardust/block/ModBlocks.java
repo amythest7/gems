@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.LanternBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
@@ -99,6 +100,68 @@ public class ModBlocks {
             UniformInt.of(3, 7),
             properties.strength(4.5f, 3.0f)
                     .requiresCorrectToolForDrops()));
+
+    public static final Block RUBY_BLOCK = registerBlock(
+            "ruby_block", properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_RED)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL))
+    );
+
+    public static final Block SAPPHIRE_BLOCK = registerBlock(
+            "sapphire_block", properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_BLUE)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL))
+    );
+
+    public static final Block TOPAZ_BLOCK = registerBlock(
+            "topaz_block", properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL))
+    );
+
+    public static final Block CITRINE_BLOCK = registerBlock(
+            "citrine_block", properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL))
+    );
+    public static final Block AQUAMARINE_BLOCK = registerBlock(
+            "aquamarine_block", properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_CYAN)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL))
+    );
+    public static final Block SPINEL_BLOCK = registerBlock(
+            "spinel_block", properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_PINK)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.METAL))
+    );
+
+    public static final Block AMETHYST_GEM_BLOCK = registerBlock(
+            "amethyst_gem_block", properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_PURPLE)
+                    .instrument(NoteBlockInstrument.BANJO)
+                    .requiresCorrectToolForDrops()
+                    .strength(5.0F, 6.0F)
+                    .sound(SoundType.AMETHYST))
+    );
+
 
     public static final Block STARDUST_LANTERN = registerBlock(
             "stardust_lantern",

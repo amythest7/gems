@@ -78,5 +78,49 @@
   "block.stardust.stardust_lantern": "Stardust Lantern",
   "block.stardust.emerald_lantern": "Emerald Lantern",
   "block.stardust.aquamarine_lantern": "Aquamarine Lantern",
-  "block.stardust.empty_lantern": "Empty Lantern"
+  "block.stardust.empty_lantern": "Empty Lantern",
+
+  "block.stardust.ruby_block": "Block Of Ruby",
+  "block.stardust.sapphire_block": "Block Of Sapphire",
+  "block.stardust.topaz_block": "Block Of Topaz",
+  "block.stardust.citrine_block": "Block Of Citrine",
+  "block.stardust.spinel_block": "Block Of Spinel",
+  "block.stardust.aquamarine_block": "Block Of Aquamarine",
+  "block.stardust.amethyst_gem_block": "Block Of Amethyst",
+
+  "tooltip.stardust.gold_ring_ruby": "§9Regeneration I (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_sapphire": "§9Night Vision (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_topaz": "§9Haste I (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_citrine": "§9Fire Resistance (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_amethyst": "§9Absorption I (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_spinel": "§9Saturation I (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_emerald": "§9Hero Of The Village I (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_diamond": "§9Speed I (0:30), Cooldown (0:45)",
+
+  "tooltip.stardust.stardust_ring_ruby": "§9Regeneration III (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_sapphire": "§9Night Vision (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_topaz": "§9Haste III (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_citrine": "§9Fire Resistance (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_amethyst": "§9Absorption III (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_spinel": "§9Saturation III (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_emerald": "§9Hero Of The Village III (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_diamond": "§9Speed III (1:30), Cooldown (2:15)",
+
+  "tooltip.stardust.netherite_ring_ruby": "§9Regeneration II (1:00), Cooldown (1:30)",
+  "tooltip.stardust.netherite_ring_sapphire": "§9Night Vision (1:00), Cooldown (1:30)",
+  "tooltip.stardust.netherite_ring_topaz": "§9Haste II (1:00), Cooldown (1:30)",
+  "tooltip.stardust.netherite_ring_citrine": "§9Fire Resistance (1:00), Cooldown (1:30)",
+  "tooltip.stardust.netherite_ring_amethyst": "§9Absorption II (1:00), Cooldown (1:30)",
+  "tooltip.stardust.netherite_ring_spinel": "§9Saturation II (1:00), Cooldown (1:30)",
+  "tooltip.stardust.netherite_ring_emerald": "§9Hero Of The Village II (1:00), Cooldown (1:30)",
+  "tooltip.stardust.netherite_ring_diamond": "§9Speed II (1:00), Cooldown (1:30)",
+
+  "tooltip.stardust.netherite_ring_aquamarine": "§9Water Breathing (1:00), Cooldown (1:30)",
+  "tooltip.stardust.stardust_ring_aquamarine": "§9Water Breathing (1:30), Cooldown (2:15)",
+  "tooltip.stardust.gold_ring_aquamarine": "§9Water Breathing (0:30), Cooldown (0:45)",
+
+  "item.stardust.music_disc_destructor": "Music Disc",
+  "jukebox_song.stardust.music_disc_destructor": "NoughtZeroMusic - Destructor",
+
+  "trim_material.stardust.ruby": "Ruby"
 }

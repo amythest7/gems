@@ -1,0 +1,10 @@
+{
+  "destructor": {
+    "sounds": [
+      {
+        "name": "stardust:destructor",
+        "stream": true
+      }
+    ]
+  }
+}

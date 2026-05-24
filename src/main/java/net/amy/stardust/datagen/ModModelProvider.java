@@ -1,10 +1,15 @@
 package net.amy.stardust.datagen;
 
+import net.amy.stardust.trim.ModTrimMaterials;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
+import net.minecraft.world.item.equipment.trim.MaterialAssetGroup;
+import net.minecraft.world.item.equipment.trim.TrimMaterials;
+
+import java.util.List;
 
 import static net.amy.stardust.block.ModBlocks.*;
 import static net.amy.stardust.item.ModItems.*;
@@ -13,6 +18,7 @@ public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricPackOutput output) {
         super(output);
     }
+
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
@@ -44,6 +50,14 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createLantern(AMETHYST_LANTERN);
         blockModelGenerators.createLantern(AQUAMARINE_LANTERN);
         blockModelGenerators.createLantern(SPINEL_LANTERN);
+        
+        blockModelGenerators.createTrivialCube(RUBY_BLOCK);
+        blockModelGenerators.createTrivialCube(SAPPHIRE_BLOCK);
+        blockModelGenerators.createTrivialCube(TOPAZ_BLOCK);
+        blockModelGenerators.createTrivialCube(CITRINE_BLOCK);
+        blockModelGenerators.createTrivialCube(AQUAMARINE_BLOCK);
+        blockModelGenerators.createTrivialCube(SPINEL_BLOCK);
+        blockModelGenerators.createTrivialCube(AMETHYST_GEM_BLOCK);
 
 
     }
@@ -96,6 +110,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(AQUAMARINE_GOLD_RING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(AQUAMARINE_NETHERITE_RING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(AQUAMARINE_STARDUST_RING, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(MUSIC_DISC_DESTRUCTOR, ModelTemplates.MUSIC_DISC);
         
 
     }
