@@ -94,7 +94,15 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(AQUAMARINE_BLOCK)
                 .add(SPINEL_BLOCK)
                 .add(AMETHYST_GEM_BLOCK);
-
+        valueLookupBuilder(BlockTags.WALL_POST_OVERRIDE)
+                .add(AMETHYST_TORCH)
+                .add(RUBY_TORCH)
+                .add(SAPPHIRE_TORCH)
+                .add(EMERALD_TORCH)
+                .add(TOPAZ_TORCH)
+                .add(CITRINE_TORCH)
+                .add(SPINEL_TORCH)
+                .add(AQUAMARINE_TORCH);
     }
 }
 

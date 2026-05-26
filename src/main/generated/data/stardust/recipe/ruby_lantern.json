@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "gem_lanterns",
+  "ingredients": [
+    "stardust:empty_lantern",
+    "stardust:ruby"
+  ],
+  "result": {
+    "id": "stardust:ruby_lantern"
+  }
+}

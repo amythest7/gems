@@ -1,0 +1,10 @@
+{
+  "infinite_amethyst": {
+    "sounds": [
+      {
+        "name": "minecraft:infinite_amethyst",
+        "stream": true
+      }
+    ]
+  }
+}

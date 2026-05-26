@@ -3,9 +3,12 @@ package net.amy.stardust;
 import net.amy.stardust.block.ModBlocks;
 import net.amy.stardust.creativemodtab.ModCreativeModeTabs;
 import net.amy.stardust.item.ModItems;
+import net.amy.stardust.particle.AmethystFlameParticle;
+import net.amy.stardust.particle.ModParticles;
 import net.amy.stardust.sounds.ModSoundEvents;
 import net.amy.stardust.trim.ModTrimMaterials;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -27,6 +30,16 @@ public class Stardust implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModSoundEvents.registerSounds();
+		ModParticles.registerParticles();
+
+		ParticleProviderRegistry.getInstance().register(ModParticles.AMETHYST_FLAME, AmethystFlameParticle.Provider::new);
+		ParticleProviderRegistry.getInstance().register(ModParticles.RUBY_FLAME, AmethystFlameParticle.Provider::new);
+		ParticleProviderRegistry.getInstance().register(ModParticles.SAPPHIRE_FLAME, AmethystFlameParticle.Provider::new);
+		ParticleProviderRegistry.getInstance().register(ModParticles.EMERALD_FLAME, AmethystFlameParticle.Provider::new);
+		ParticleProviderRegistry.getInstance().register(ModParticles.TOPAZ_FLAME, AmethystFlameParticle.Provider::new);
+		ParticleProviderRegistry.getInstance().register(ModParticles.CITRINE_FLAME, AmethystFlameParticle.Provider::new);
+		ParticleProviderRegistry.getInstance().register(ModParticles.SPINEL_FLAME, AmethystFlameParticle.Provider::new);
+		ParticleProviderRegistry.getInstance().register(ModParticles.AQUAMARINE_FLAME, AmethystFlameParticle.Provider::new);
 
 
 	}

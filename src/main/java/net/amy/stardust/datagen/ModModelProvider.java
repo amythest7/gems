@@ -12,6 +12,14 @@ import net.minecraft.world.item.equipment.trim.TrimMaterials;
 import java.util.List;
 
 import static net.amy.stardust.block.ModBlocks.*;
+import static net.amy.stardust.block.ModBlocks.AMETHYST_TORCH;
+import static net.amy.stardust.block.ModBlocks.AQUAMARINE_TORCH;
+import static net.amy.stardust.block.ModBlocks.CITRINE_TORCH;
+import static net.amy.stardust.block.ModBlocks.EMERALD_TORCH;
+import static net.amy.stardust.block.ModBlocks.RUBY_TORCH;
+import static net.amy.stardust.block.ModBlocks.SAPPHIRE_TORCH;
+import static net.amy.stardust.block.ModBlocks.SPINEL_TORCH;
+import static net.amy.stardust.block.ModBlocks.TOPAZ_TORCH;
 import static net.amy.stardust.item.ModItems.*;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -50,6 +58,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createLantern(AMETHYST_LANTERN);
         blockModelGenerators.createLantern(AQUAMARINE_LANTERN);
         blockModelGenerators.createLantern(SPINEL_LANTERN);
+
+        blockModelGenerators.createNormalTorch(RUBY_TORCH, RUBY_WALL_TORCH);
+        blockModelGenerators.createNormalTorch(SAPPHIRE_TORCH, SAPPHIRE_WALL_TORCH);
+        blockModelGenerators.createNormalTorch(TOPAZ_TORCH, TOPAZ_WALL_TORCH);
+        blockModelGenerators.createNormalTorch(CITRINE_TORCH, CITRINE_WALL_TORCH);
+        blockModelGenerators.createNormalTorch(EMERALD_TORCH, EMERALD_WALL_TORCH);
+        blockModelGenerators.createNormalTorch(AMETHYST_TORCH, AMETHYST_WALL_TORCH);
+        blockModelGenerators.createNormalTorch(AQUAMARINE_TORCH, AQUAMARINE_WALL_TORCH);
+        blockModelGenerators.createNormalTorch(SPINEL_TORCH, SPINEL_WALL_TORCH);
         
         blockModelGenerators.createTrivialCube(RUBY_BLOCK);
         blockModelGenerators.createTrivialCube(SAPPHIRE_BLOCK);
@@ -112,6 +129,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(AQUAMARINE_STARDUST_RING, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(MUSIC_DISC_DESTRUCTOR, ModelTemplates.MUSIC_DISC);
+        itemModelGenerators.generateFlatItem(MUSIC_DISC_INFINITE_AMETHYST, ModelTemplates.MUSIC_DISC);
         
 
     }

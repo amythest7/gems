@@ -335,6 +335,88 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("gem_lanterns")
                         .save(output);
 
+                shaped(RecipeCategory.MISC, ModBlocks.AMETHYST_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', ModItems.AMETHYST)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(ModItems.AMETHYST), has(ModItems.AMETHYST))
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.RUBY_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', ModItems.RUBY)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', ModItems.SAPPHIRE)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE))
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.EMERALD_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', Items.EMERALD)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD))
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.TOPAZ_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', ModItems.TOPAZ)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(ModItems.TOPAZ), has(ModItems.TOPAZ))
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.CITRINE_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', ModItems.CITRINE)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(ModItems.CITRINE), has(ModItems.CITRINE))
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.SPINEL_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', ModItems.SPINEL)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(ModItems.SPINEL), has(ModItems.SPINEL))
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.AQUAMARINE_TORCH)
+                        .pattern(" A ")
+                        .pattern(" S ")
+                        .pattern(" C ")
+                        .define('A', ModItems.AQUAMARINE)
+                        .define('C', Items.STICK)
+                        .define('S', Items.COAL)
+                        .unlockedBy(getHasName(ModItems.AQUAMARINE), has(ModItems.AQUAMARINE))
+                        .save(output);
+                
+                
+
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_BLOCK, ModItems.RUBY, getHasName(ModItems.RUBY));
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_BLOCK, ModItems.SAPPHIRE, getHasName(ModItems.SAPPHIRE));
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TOPAZ_BLOCK, ModItems.TOPAZ, getHasName(ModItems.TOPAZ));

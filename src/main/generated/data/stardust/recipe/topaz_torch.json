@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": "stardust:topaz",
+    "C": "minecraft:stick",
+    "S": "minecraft:coal"
+  },
+  "pattern": [
+    " A ",
+    " S ",
+    " C "
+  ],
+  "result": {
+    "id": "stardust:topaz_torch"
+  }
+}

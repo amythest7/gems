@@ -1,7 +1,10 @@
 package net.amy.stardust.block;
 
 import net.amy.stardust.Stardust;
+import net.amy.stardust.particle.ModParticles;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
@@ -9,10 +12,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.LanternBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.item.StandingAndWallBlockItem;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -23,6 +24,8 @@ import java.util.function.Function;
 import static net.amy.stardust.Stardust.MOD_ID;
 
 public class ModBlocks {
+
+
 
     public static final Block CRYSTALLISED_STARDUST_BLOCK = registerBlock("crystallised_stardust_block", properties -> new Block(properties.strength(4f)
             .requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
@@ -269,6 +272,135 @@ public class ModBlocks {
                             .noOcclusion()
                             .pushReaction(PushReaction.DESTROY)));
 
+    public static final Block AMETHYST_TORCH = registerBlockWithoutItem(
+            "amethyst_torch", properties -> new TorchBlock(ModParticles.AMETHYST_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block RUBY_TORCH = registerBlockWithoutItem(
+            "ruby_torch",
+            properties -> new TorchBlock(ModParticles.RUBY_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block SAPPHIRE_TORCH = registerBlockWithoutItem(
+            "sapphire_torch",
+            properties -> new TorchBlock(ModParticles.SAPPHIRE_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block TOPAZ_TORCH = registerBlockWithoutItem(
+            "topaz_torch",
+            properties -> new TorchBlock(ModParticles.TOPAZ_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block CITRINE_TORCH = registerBlockWithoutItem(
+            "citrine_torch",
+            properties -> new TorchBlock(ModParticles.CITRINE_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block SPINEL_TORCH = registerBlockWithoutItem(
+            "spinel_torch",
+            properties -> new TorchBlock(ModParticles.SPINEL_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block AQUAMARINE_TORCH = registerBlockWithoutItem(
+            "aquamarine_torch",
+            properties -> new TorchBlock(ModParticles.AQUAMARINE_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
+
+    public static final Block EMERALD_TORCH = registerBlockWithoutItem(
+            "emerald_torch",
+            properties -> new TorchBlock(ModParticles.EMERALD_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block AMETHYST_WALL_TORCH = registerBlock(
+            "amethyst_wall_torch", properties -> new WallTorchBlock(ModParticles.AMETHYST_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block RUBY_WALL_TORCH = registerBlock(
+            "ruby_wall_torch", properties -> new WallTorchBlock(ModParticles.RUBY_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)) );
+    public static final Block SAPPHIRE_WALL_TORCH = registerBlock(
+            "sapphire_wall_torch", properties -> new WallTorchBlock(ModParticles.SAPPHIRE_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block TOPAZ_WALL_TORCH = registerBlock(
+            "topaz_wall_torch", properties -> new WallTorchBlock(ModParticles.TOPAZ_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block CITRINE_WALL_TORCH = registerBlock(
+            "citrine_wall_torch", properties -> new WallTorchBlock(ModParticles.CITRINE_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+    public static final Block SPINEL_WALL_TORCH = registerBlock(
+            "spinel_wall_torch", properties -> new WallTorchBlock(ModParticles.SPINEL_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block AQUAMARINE_WALL_TORCH = registerBlock(
+            "aquamarine_wall_torch", properties -> new WallTorchBlock(ModParticles.AQUAMARINE_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
+
+    public static final Block EMERALD_WALL_TORCH = registerBlock(
+            "emerald_wall_torch", properties -> new WallTorchBlock(ModParticles.EMERALD_FLAME,
+                    properties.noCollision()
+                            .instabreak()
+                            .lightLevel(statex -> 14)
+                            .sound(SoundType.WOOD)
+                            .pushReaction(PushReaction.DESTROY)));
+
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of()
@@ -276,6 +408,15 @@ public class ModBlocks {
         registerBlockItem(name, toRegister);
         return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name), toRegister);
     }
+
+    private static Block registerBlockWithoutItem(String name, Function<BlockBehaviour.Properties, Block> function) {
+        Block toRegister = function.apply(BlockBehaviour.Properties.of()
+                .setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name))));
+        return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name), toRegister);
+    }
+
+
+
 
     private static void registerBlockItem(String name, Block block) {
         Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name),

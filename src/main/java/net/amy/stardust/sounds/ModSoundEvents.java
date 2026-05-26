@@ -16,12 +16,20 @@ public class ModSoundEvents {
 
     public static final Holder.Reference<SoundEvent> MUSIC_DISC_DESTRUCTOR =
             registerSoundEvent("destructor");
+    public static final Holder.Reference<SoundEvent> MUSIC_DISC_INFINITE_AMETHYST =
+            registerSoundEventFromVanilla("infinite_amethyst");
 
 
     private static Holder.Reference<SoundEvent> registerSoundEvent(String name) {
         Identifier id = Identifier.fromNamespaceAndPath(MOD_ID, name);
-        return Registry.registerForHolder(BuiltInRegistries.SOUND_EVENT, Identifier.fromNamespaceAndPath(MOD_ID, name),
-                SoundEvent.createVariableRangeEvent(Identifier.fromNamespaceAndPath(MOD_ID, name)) );
+        return Registry.registerForHolder(BuiltInRegistries.SOUND_EVENT, id,
+                SoundEvent.createVariableRangeEvent(id));
+    }
+
+    private static Holder.Reference<SoundEvent> registerSoundEventFromVanilla(String name) {
+        Identifier id = Identifier.withDefaultNamespace(name);
+        return Registry.registerForHolder(BuiltInRegistries.SOUND_EVENT, id,
+                SoundEvent.createVariableRangeEvent(id));
     }
 
     public static void registerSounds() {

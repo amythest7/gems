@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "stardust:block/ruby_wall_torch"
+    },
+    "facing=north": {
+      "model": "stardust:block/ruby_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "stardust:block/ruby_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "stardust:block/ruby_wall_torch",
+      "y": 180
+    }
+  }
+}

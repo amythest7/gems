@@ -68,6 +68,7 @@
 
   "creativemodetab.stardust.stardust_items": "Stardust",
   "creativemodetab.stardust.gem_items": "Gems",
+  "itemgroup.stardust.music_disc_items": "Music Discs",
 
   "block.stardust.ruby_lantern": "Ruby Lantern",
   "block.stardust.sapphire_lantern": "Sapphire Lantern",
@@ -79,6 +80,15 @@
   "block.stardust.emerald_lantern": "Emerald Lantern",
   "block.stardust.aquamarine_lantern": "Aquamarine Lantern",
   "block.stardust.empty_lantern": "Empty Lantern",
+
+  "item.stardust.ruby_torch": "Ruby Torch",
+  "item.stardust.sapphire_torch": "Sapphire Torch",
+  "item.stardust.topaz_torch": "Topaz Torch",
+  "item.stardust.citrine_torch": "Citrine Torch",
+  "item.stardust.amethyst_torch": "Amethyst Torch",
+  "item.stardust.spinel_torch": "Spinel Torch",
+  "item.stardust.emerald_torch": "Emerald Torch",
+  "item.stardust.aquamarine_torch": "Aquamarine Torch",
 
   "block.stardust.ruby_block": "Block Of Ruby",
   "block.stardust.sapphire_block": "Block Of Sapphire",
@@ -121,6 +131,9 @@
 
   "item.stardust.music_disc_destructor": "Music Disc",
   "jukebox_song.stardust.music_disc_destructor": "NoughtZeroMusic - Destructor",
+
+  "item.stardust.music_disc_infinite_amethyst": "Music Disc",
+  "jukebox_song.stardust.music_disc_infinite_amethyst": "Lena Raine - Infinite Amethyst",
 
   "trim_material.stardust.ruby": "Ruby"
 }

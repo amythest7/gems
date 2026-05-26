@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "stardust",
+  "key": {
+    "C": "stardust:crystallised_stardust"
+  },
+  "pattern": [
+    "CC",
+    "CC"
+  ],
+  "result": {
+    "id": "stardust:crystallised_stardust_block"
+  }
+}

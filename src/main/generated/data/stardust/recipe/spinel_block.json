@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "stardust:spinel",
+    "stardust:spinel",
+    "stardust:spinel",
+    "stardust:spinel",
+    "stardust:spinel",
+    "stardust:spinel",
+    "stardust:spinel",
+    "stardust:spinel",
+    "stardust:spinel"
+  ],
+  "result": {
+    "id": "stardust:spinel_block"
+  }
+}

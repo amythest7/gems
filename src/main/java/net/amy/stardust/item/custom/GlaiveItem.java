@@ -21,7 +21,7 @@ public class GlaiveItem extends Item {
     private static final Identifier INTERACTION_RANGE_MODIFIER_ID =
             Identifier.fromNamespaceAndPath(MOD_ID, "interaction_range_bonus");
 
-    public GlaiveItem(final ToolMaterial material, final float attackDamageBaseline, final float attackSpeedBaseline, final Properties properties) {
+    public GlaiveItem(final ToolMaterial material, final float attackDamageBaseline, final float attackSpeedBaseline, float attackReachBaseline, final Properties properties) {
         super(properties.sword(material, attackDamageBaseline, attackSpeedBaseline));
     }
 

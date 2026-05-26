@@ -1,12 +1,14 @@
 package net.amy.stardust.item;
 
 import net.amy.stardust.Stardust;
+import net.amy.stardust.block.ModBlocks;
 import net.amy.stardust.item.custom.GlaiveItem;
 import net.amy.stardust.item.custom.GoldRingItem;
 import net.amy.stardust.item.custom.NetheriteRingItem;
 import net.amy.stardust.item.custom.StardustRingItem;
 import net.amy.stardust.sounds.ModSoundEvents;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -35,6 +37,56 @@ public class ModItems {
     public static Item CITRINE = registerItem("citrine", Item::new);
     public static Item SPINEL = registerItem("spinel", Item::new);
     public static Item AQUAMARINE = registerItem("aquamarine", Item::new);
+    
+    public static final Item AMETHYST_TORCH = registerItem( "amethyst_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.AMETHYST_TORCH,
+                    ModBlocks.AMETHYST_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    public static final Item RUBY_TORCH = registerItem( "ruby_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.RUBY_TORCH,
+                    ModBlocks.RUBY_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    public static final Item SAPPHIRE_TORCH = registerItem( "sapphire_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.SAPPHIRE_TORCH,
+                    ModBlocks.SAPPHIRE_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    public static final Item EMERALD_TORCH = registerItem( "emerald_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.EMERALD_TORCH,
+                    ModBlocks.EMERALD_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    public static final Item TOPAZ_TORCH = registerItem( "topaz_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.TOPAZ_TORCH,
+                    ModBlocks.TOPAZ_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    public static final Item SPINEL_TORCH = registerItem( "spinel_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.SPINEL_TORCH,
+                    ModBlocks.SPINEL_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    public static final Item CITRINE_TORCH = registerItem( "citrine_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.CITRINE_TORCH,
+                    ModBlocks.CITRINE_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    public static final Item AQUAMARINE_TORCH = registerItem( "aquamarine_torch", properties ->
+            new StandingAndWallBlockItem(
+                    ModBlocks.AQUAMARINE_TORCH,
+                    ModBlocks.AQUAMARINE_WALL_TORCH,
+                    Direction.DOWN ,
+                    properties));
+    
 
     public static Item GOLD_RING = registerItem("gold_ring", GoldRingItem::new);
     public static Item RUBY_GOLD_RING = registerItem("gold_ring_ruby", properties -> new GoldRingItem(properties.stacksTo(1), MobEffects.REGENERATION) {
@@ -256,12 +308,13 @@ public class ModItems {
             super.appendHoverText(itemStack, context, display, builder, tooltipFlag);
         }
     });
-    public static Item MUSIC_DISC_DESTRUCTOR = registerItem("music_disc_destructor", properties -> new Item(properties.stacksTo(1).rarity(Rarity.UNCOMMON).jukeboxPlayable(ModJukeboxSongs.DESTRUCTOR)));
+    public static Item MUSIC_DISC_DESTRUCTOR = registerItem("music_disc_destructor", properties -> new Item(properties.stacksTo(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.DESTRUCTOR)));
+    public static Item MUSIC_DISC_INFINITE_AMETHYST = registerItem("music_disc_infinite_amethyst", properties -> new Item(properties.stacksTo(1).rarity(Rarity.UNCOMMON).jukeboxPlayable(ModJukeboxSongs.INFINITE_AMETHYST)));
     
     public static Item STARDUST_GLAIVE = registerItem("stardust_glaive", properties -> new GlaiveItem(
-            ToolMaterial.DIAMOND, 6f, -2.6f, properties
-            .attributes(GlaiveItem.createAttributes(ToolMaterial.DIAMOND,6, -2.6f, 0.5f))
-            .durability(ToolMaterial.DIAMOND.durability())
+            ModToolMaterial.STARDUST, 6f, -2.6f, 0.5f, properties
+            .attributes(GlaiveItem.createAttributes(ModToolMaterial.STARDUST,6, -2.6f, 0.5f))
+            .durability(ModToolMaterial.STARDUST.durability())
             .rarity(Rarity.RARE)
             ));
 

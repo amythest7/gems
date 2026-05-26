@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "stardust:topaz",
+    "stardust:topaz",
+    "stardust:topaz",
+    "stardust:topaz",
+    "stardust:topaz",
+    "stardust:topaz",
+    "stardust:topaz",
+    "stardust:topaz",
+    "stardust:topaz"
+  ],
+  "result": {
+    "id": "stardust:topaz_block"
+  }
+}

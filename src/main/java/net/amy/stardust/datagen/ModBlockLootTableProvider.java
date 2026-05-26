@@ -17,6 +17,14 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import java.util.concurrent.CompletableFuture;
 
 import static net.amy.stardust.block.ModBlocks.*;
+import static net.amy.stardust.block.ModBlocks.AMETHYST_TORCH;
+import static net.amy.stardust.block.ModBlocks.AQUAMARINE_TORCH;
+import static net.amy.stardust.block.ModBlocks.CITRINE_TORCH;
+import static net.amy.stardust.block.ModBlocks.EMERALD_TORCH;
+import static net.amy.stardust.block.ModBlocks.RUBY_TORCH;
+import static net.amy.stardust.block.ModBlocks.SAPPHIRE_TORCH;
+import static net.amy.stardust.block.ModBlocks.SPINEL_TORCH;
+import static net.amy.stardust.block.ModBlocks.TOPAZ_TORCH;
 import static net.amy.stardust.item.ModItems.*;
 
 public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
@@ -38,6 +46,16 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(AMETHYST_LANTERN);
         dropSelf(AQUAMARINE_LANTERN);
         dropSelf(SPINEL_LANTERN);
+
+        dropSelf(RUBY_TORCH);
+        dropSelf(SAPPHIRE_TORCH);
+        dropSelf(TOPAZ_TORCH);
+        dropSelf(CITRINE_TORCH);
+        dropSelf(EMERALD_TORCH);
+        dropSelf(AMETHYST_TORCH);
+        dropSelf(AQUAMARINE_TORCH);
+        dropSelf(SPINEL_TORCH);
+
 
         dropSelf(RUBY_BLOCK);
         dropSelf(SAPPHIRE_BLOCK);

@@ -10,7 +10,7 @@ import static net.amy.stardust.Stardust.MOD_ID;
 
 public class ModTags {
     public static class Blocks {
-
+        public static TagKey<Block> INCORRECT_FOR_STARDUST_TOOL = createTag("incorrect_for_stardust_tool");
 
         private static TagKey<Block> createTag(String name) {
             return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name));
@@ -18,7 +18,7 @@ public class ModTags {
     }
 
     public static class Items {
-
+        public static TagKey<Item> STARDUST_TOOL_MATERIAL = createTag("stardust_tool_material");
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));

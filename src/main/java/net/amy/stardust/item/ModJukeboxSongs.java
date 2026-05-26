@@ -16,11 +16,17 @@ import static net.amy.stardust.Stardust.MOD_ID;
 
 public interface ModJukeboxSongs {
     ResourceKey<JukeboxSong> DESTRUCTOR = create("destructor");
+    ResourceKey<JukeboxSong> INFINITE_AMETHYST = createFromVanilla("infinite_amethyst");
 
 
     private static ResourceKey<JukeboxSong> create(final String id) {
         return ResourceKey.create(Registries.JUKEBOX_SONG, Identifier.fromNamespaceAndPath(MOD_ID, id));
     }
+
+    private static ResourceKey<JukeboxSong> createFromVanilla(final String id) {
+        return ResourceKey.create(Registries.JUKEBOX_SONG, Identifier.withDefaultNamespace(id));
+    }
+
 
     private static void register(
             final BootstrapContext<JukeboxSong> context,
@@ -38,6 +44,7 @@ public interface ModJukeboxSongs {
 
     static void bootstrap(final BootstrapContext<JukeboxSong> context) {
         register(context, DESTRUCTOR, ModSoundEvents.MUSIC_DISC_DESTRUCTOR, 307, 12);
+        register(context, INFINITE_AMETHYST, ModSoundEvents.MUSIC_DISC_INFINITE_AMETHYST, 271, 13);
 
     }
 

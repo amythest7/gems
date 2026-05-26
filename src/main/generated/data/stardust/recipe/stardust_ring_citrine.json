@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "rings",
+  "ingredients": [
+    "stardust:stardust_ring",
+    "stardust:citrine"
+  ],
+  "result": {
+    "id": "stardust:stardust_ring_citrine"
+  }
+}

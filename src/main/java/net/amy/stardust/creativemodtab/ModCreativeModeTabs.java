@@ -11,7 +11,21 @@ import net.minecraft.world.item.ItemStack;
 
 import static net.amy.stardust.Stardust.MOD_ID;
 import static net.amy.stardust.block.ModBlocks.*;
+import static net.amy.stardust.block.ModBlocks.AMETHYST_TORCH;
+import static net.amy.stardust.block.ModBlocks.AQUAMARINE_TORCH;
+import static net.amy.stardust.block.ModBlocks.CITRINE_TORCH;
+import static net.amy.stardust.block.ModBlocks.EMERALD_TORCH;
+import static net.amy.stardust.block.ModBlocks.RUBY_TORCH;
+import static net.amy.stardust.block.ModBlocks.SAPPHIRE_TORCH;
+import static net.amy.stardust.block.ModBlocks.SPINEL_TORCH;
+import static net.amy.stardust.block.ModBlocks.TOPAZ_TORCH;
 import static net.amy.stardust.item.ModItems.*;
+/*import static net.amy.stardust.item.ModItems.AQUAMARINE_TORCH;
+import static net.amy.stardust.item.ModItems.EMERALD_TORCH;
+import static net.amy.stardust.item.ModItems.RUBY_TORCH;
+import static net.amy.stardust.item.ModItems.SAPPHIRE_TORCH;
+import static net.amy.stardust.item.ModItems.SPINEL_TORCH;
+import static net.amy.stardust.item.ModItems.TOPAZ_TORCH;*/
 import static net.minecraft.world.item.Items.*;
 
 public class ModCreativeModeTabs {
@@ -126,6 +140,17 @@ public class ModCreativeModeTabs {
                         output.accept(AQUAMARINE_LANTERN);
                         output.accept(SPINEL_LANTERN);
 
+                        output.accept(RUBY_TORCH);
+                        output.accept(SAPPHIRE_TORCH);
+                        output.accept(TOPAZ_TORCH);
+                        output.accept(CITRINE_TORCH);
+                        output.accept(EMERALD_TORCH);
+                        output.accept(AMETHYST_TORCH);
+                        output.accept(AQUAMARINE_TORCH);
+                        output.accept(SPINEL_TORCH);
+
+                        output.accept(MUSIC_DISC_INFINITE_AMETHYST);
+
 
 
 
@@ -134,6 +159,42 @@ public class ModCreativeModeTabs {
 
                     })
 
+                    .build());
+
+    public static final CreativeModeTab MUSIC_DISC_ITEMS_GROUP = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(MOD_ID, "music_disc_items"),
+            FabricCreativeModeTab.builder()
+                    .icon(() -> new ItemStack(MUSIC_DISC_CAT))
+                    .title(Component.translatable("itemgroup.stardust.music_disc_items"))
+                    .displayItems((parameters, output) -> {
+                        output.accept(MUSIC_DISC_WAIT);
+                        output.accept(MUSIC_DISC_11);
+                        output.accept(MUSIC_DISC_13);
+                        output.accept(MUSIC_DISC_CAT);
+                        output.accept(MUSIC_DISC_BLOCKS);
+                        output.accept(MUSIC_DISC_CHIRP);
+                        output.accept(MUSIC_DISC_FAR);
+                        output.accept(MUSIC_DISC_MALL);
+                        output.accept(MUSIC_DISC_MELLOHI);
+                        output.accept(MUSIC_DISC_STAL);
+                        output.accept(MUSIC_DISC_STRAD);
+                        output.accept(MUSIC_DISC_WARD);
+
+                        output.accept(MUSIC_DISC_PIGSTEP);
+
+                        output.accept(MUSIC_DISC_INFINITE_AMETHYST);
+                        output.accept(MUSIC_DISC_OTHERSIDE);
+                        output.accept(MUSIC_DISC_5);
+
+                        output.accept(MUSIC_DISC_RELIC);
+
+                        output.accept(MUSIC_DISC_CREATOR);
+                        output.accept(MUSIC_DISC_CREATOR_MUSIC_BOX);
+                        output.accept(MUSIC_DISC_DESTRUCTOR);
+                        output.accept(MUSIC_DISC_PRECIPICE);
+
+                        output.accept(MUSIC_DISC_LAVA_CHICKEN);
+                        output.accept(MUSIC_DISC_TEARS);
+                    })
                     .build());
 
     public static void registerModCreativeModeTabs() {
