@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "group": "gem_lanterns",
   "key": {
     "G": "minecraft:tinted_glass",

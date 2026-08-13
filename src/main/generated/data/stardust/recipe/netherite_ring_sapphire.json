@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "category": "misc",
   "group": "rings",
   "ingredients": [
     "stardust:netherite_ring",

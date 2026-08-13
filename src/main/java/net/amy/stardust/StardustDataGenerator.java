@@ -2,6 +2,9 @@ package net.amy.stardust;
 
 import net.amy.stardust.datagen.*;
 import net.amy.stardust.trim.ModTrimMaterials;
+import net.amy.stardust.worldgen.ModConfiguredFeatures;
+import net.amy.stardust.worldgen.ModPlacedFeatures;
+import net.amy.stardust.worldgen.ModWorldgenProvider;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.core.RegistrySetBuilder;
@@ -18,13 +21,15 @@ public class StardustDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipeProvider::new);
 		pack.addProvider(ModItemTagsProvider::new);
 		pack.addProvider(ModRegistryDataGenerator::new);
-
+		pack.addProvider(ModWorldgenProvider::new);
 	}
 
 	@Override
 	public void buildRegistry(RegistrySetBuilder registryBuilder) {
 		DataGeneratorEntrypoint.super.buildRegistry(registryBuilder);
 		registryBuilder.add(Registries.TRIM_MATERIAL, ModTrimMaterials::bootstrap);
+		registryBuilder.add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::configure);
+		registryBuilder.add(Registries.PLACED_FEATURE, ModPlacedFeatures::configure);
 	}
 
 }
