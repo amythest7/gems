@@ -313,13 +313,16 @@ public class ModItems {
     
     public static Item STARDUST_GLAIVE = registerItem("stardust_glaive", properties -> new GlaiveItem(
             ModToolMaterial.STARDUST, 6f, -2.6f, 0.5f, properties
-            .attributes(GlaiveItem.createAttributes(ModToolMaterial.STARDUST,6, -2.6f, 0.5f))
+            .attributes(GlaiveItem.createAttributes(ModToolMaterial.STARDUST, 6f, -2.6f, 0.5f))
             .durability(ModToolMaterial.STARDUST.durability())
             .rarity(Rarity.RARE)
+            .stacksTo(1)
             ));
 
 
-
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
 
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "stardust:gold_ring",
+    "stardust:ruby_gold_ring",
+    "stardust:citrine_gold_ring",
+    "stardust:topaz_gold_ring",
+    "stardust:emerald_gold_ring",
+    "stardust:aquamarine_gold_ring",
+    "stardust:sapphire_gold_ring",
+    "stardust:amethyst_gold_ring",
+    "stardust:spinel_gold_ring",
+
+    "stardust:netherite_ring",
+    "stardust:stardust_ring"
+  ]
+}

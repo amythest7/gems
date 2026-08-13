@@ -1,5 +1,6 @@
 package net.amy.stardust.datagen;
 
+import net.amy.stardust.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
@@ -20,7 +21,7 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-        valueLookupBuilder(ItemTags.TRIM_MATERIALS)
-                .add(RUBY);
+        tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.getRK(RUBY));
     }
 }
