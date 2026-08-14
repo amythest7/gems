@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "stardust",
+  "group": "stardust_block",
   "key": {
     "C": "stardust:crystallised_stardust"
   },

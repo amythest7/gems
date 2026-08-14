@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "group": "rings",
   "key": {
-    "G": "stardust:stardust"
+    "G": "stardust:crystallised_stardust"
   },
   "pattern": [
     "GGG",

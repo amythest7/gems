@@ -12,7 +12,6 @@ public class ModTags {
     public static class Blocks {
         public static TagKey<Block> NEEDS_STARDUST_TOOL = createTag("needs_stardust_tool");
         public static TagKey<Block> INCORRECT_FOR_STARDUST_TOOL = createTag("incorrect_for_stardust_tool");
-
         private static TagKey<Block> createTag(String name) {
             return TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(MOD_ID, name));
         }

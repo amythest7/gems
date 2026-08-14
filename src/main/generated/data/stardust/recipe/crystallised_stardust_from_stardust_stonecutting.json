@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "stardust:stardust",
+  "result": {
+    "id": "stardust:crystallised_stardust"
+  }
+}

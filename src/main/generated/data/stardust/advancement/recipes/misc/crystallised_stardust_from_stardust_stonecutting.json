@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crystallised_stardust": {
+    "has_stardust": {
       "conditions": {
         "items": [
           {
-            "items": "stardust:crystallised_stardust"
+            "items": "stardust:stardust"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stardust:stardust_ring"
+        "recipe": "stardust:crystallised_stardust_from_stardust_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crystallised_stardust"
+      "has_stardust"
     ]
   ],
   "rewards": {
     "recipes": [
-      "stardust:stardust_ring"
+      "stardust:crystallised_stardust_from_stardust_stonecutting"
     ]
   }
 }

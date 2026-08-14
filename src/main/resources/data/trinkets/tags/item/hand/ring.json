@@ -2,16 +2,33 @@
   "replace": false,
   "values": [
     "stardust:gold_ring",
-    "stardust:ruby_gold_ring",
-    "stardust:citrine_gold_ring",
-    "stardust:topaz_gold_ring",
-    "stardust:emerald_gold_ring",
-    "stardust:aquamarine_gold_ring",
-    "stardust:sapphire_gold_ring",
-    "stardust:amethyst_gold_ring",
-    "stardust:spinel_gold_ring",
+    "stardust:gold_ring_ruby",
+    "stardust:gold_ring_citrine",
+    "stardust:gold_ring_topaz",
+    "stardust:gold_ring_emerald",
+    "stardust:gold_ring_aquamarine",
+    "stardust:gold_ring_sapphire",
+    "stardust:gold_ring_amethyst",
+    "stardust:gold_ring_spinel",
 
     "stardust:netherite_ring",
-    "stardust:stardust_ring"
+    "stardust:netherite_ring_ruby",
+    "stardust:netherite_ring_citrine",
+    "stardust:netherite_ring_topaz",
+    "stardust:netherite_ring_emerald",
+    "stardust:netherite_ring_aquamarine",
+    "stardust:netherite_ring_sapphire",
+    "stardust:netherite_ring_amethyst",
+    "stardust:netherite_ring_spinel",
+
+    "stardust:stardust_ring",
+    "stardust:stardust_ring_ruby",
+    "stardust:stardust_ring_citrine",
+    "stardust:stardust_ring_topaz",
+    "stardust:stardust_ring_emerald",
+    "stardust:stardust_ring_aquamarine",
+    "stardust:stardust_ring_sapphire",
+    "stardust:stardust_ring_amethyst",
+    "stardust:stardust_ring_spinel"
   ]
 }

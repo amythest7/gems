@@ -33,6 +33,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 oreSmelting(STARDUST_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.UNREFINED_STARDUST, 0.5f, 300, "stardust");
                 oreBlasting(STARDUST_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.UNREFINED_STARDUST, 0.5f, 150, "stardust");
                 stonecutterResultFromBase(RecipeCategory.MISC, ModItems.STARDUST, ModItems.UNREFINED_STARDUST);
+                stonecutterResultFromBase(RecipeCategory.MISC, ModItems.CRYSTALLISED_STARDUST, ModItems.STARDUST);
                 simpleCookingRecipe("campfire_cooking", CampfireCookingRecipe::new, 600, ModItems.UNREFINED_STARDUST, ModItems.STARDUST, 0.35F);
 
                 shaped(RecipeCategory.MISC, ModBlocks.CRYSTALLISED_STARDUST_BLOCK)
@@ -40,7 +41,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("CC")
                         .define('C', ModItems.CRYSTALLISED_STARDUST)
                         .unlockedBy(getHasName(ModItems.CRYSTALLISED_STARDUST), has(ModItems.CRYSTALLISED_STARDUST))
-                        .group("stardust")
+                        .group("stardust_block")
                         .save(output);
 
                 shaped(RecipeCategory.MISC, ModItems.GOLD_RING)
@@ -112,8 +113,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("GGG")
                         .pattern("G G")
                         .pattern("GGG")
-                        .define('G', ModItems.STARDUST)
-                        .unlockedBy(getHasName(ModItems.STARDUST), has(ModItems.STARDUST))
+                        .define('G', ModItems.CRYSTALLISED_STARDUST)
+                        .unlockedBy(getHasName(ModItems.CRYSTALLISED_STARDUST), has(ModItems.CRYSTALLISED_STARDUST))
                         .group("rings")
                         .save(output);
 

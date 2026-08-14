@@ -5,6 +5,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.heightproviders.UniformHeight;
@@ -18,10 +19,16 @@ public class ModPlacedFeatures {
     public static void configure(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
         List<PlacementModifier> gemVeinModifiers = List.of(
+                CountPlacement.of(10),
+                BiomeFilter.biome(),
+                InSquarePlacement.spread(),
+                HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(130)))
+        );
+        List<PlacementModifier> stardustVeinModifiers = List.of(
                 CountPlacement.of(100),
                 BiomeFilter.biome(),
                 InSquarePlacement.spread(),
-                HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(480)))
+                HeightRangePlacement.of(UniformHeight.of(VerticalAnchor.BOTTOM, VerticalAnchor.absolute(80)))
         );
         context.register(
                 RUBY_ORE_PLACED_KEY,
@@ -72,6 +79,13 @@ public class ModPlacedFeatures {
                         gemVeinModifiers
                 )
         );
+        context.register(
+                STARDUST_ORE_PLACED_KEY,
+                new PlacedFeature(
+                        configuredFeatures.getOrThrow(ModConfiguredFeatures.STARDUST_ORE_VEIN_CONFIGURED_KEY),
+                        stardustVeinModifiers
+                )
+        );
     }
     public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY =
           ResourceKey.create(
@@ -107,5 +121,10 @@ public class ModPlacedFeatures {
             ResourceKey.create(
                     Registries.PLACED_FEATURE,
                     Identifier.fromNamespaceAndPath(MOD_ID, "citrine_ore_vein")
+            );
+    public static final ResourceKey<PlacedFeature> STARDUST_ORE_PLACED_KEY =
+            ResourceKey.create(
+                    Registries.PLACED_FEATURE,
+                    Identifier.fromNamespaceAndPath(MOD_ID, "stardust_ore_vein")
             );
 }

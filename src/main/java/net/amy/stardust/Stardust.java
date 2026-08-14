@@ -3,6 +3,7 @@ package net.amy.stardust;
 import net.amy.stardust.block.ModBlocks;
 import net.amy.stardust.creativemodtab.ModCreativeModeTabs;
 import net.amy.stardust.item.ModItems;
+import net.amy.stardust.keymapping.ModKeyMappings;
 import net.amy.stardust.particle.AmethystFlameParticle;
 import net.amy.stardust.particle.ModParticles;
 import net.amy.stardust.sounds.ModSoundEvents;
@@ -81,6 +82,11 @@ public class Stardust implements ModInitializer {
 				BiomeSelectors.foundInOverworld(),
 				GenerationStep.Decoration.UNDERGROUND_ORES,
 				ModPlacedFeatures.TOPAZ_ORE_PLACED_KEY
+		);
+		BiomeModifications.addFeature(
+				BiomeSelectors.foundInTheEnd(),
+				GenerationStep.Decoration.UNDERGROUND_ORES,
+				ModPlacedFeatures.STARDUST_ORE_PLACED_KEY
 		);
 	}
 

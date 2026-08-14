@@ -1,5 +1,6 @@
 package net.amy.stardust.item.custom;
 
+import eu.pb4.trinkets.api.callback.TrinketCallback;
 import net.minecraft.core.Holder;
 import net.minecraft.network.chat.Component;
 import net.minecraft.stats.Stats;
@@ -17,7 +18,7 @@ import net.minecraft.world.level.Level;
 
 import java.util.function.Consumer;
 
-public class GoldRingItem extends Item {
+public class GoldRingItem extends RingItem {
 
 
     private Holder<MobEffect> effect;
@@ -34,8 +35,12 @@ public class GoldRingItem extends Item {
 
     @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
-        player.addEffect(new MobEffectInstance(effect, 600));
-        player.awardStat(Stats.ITEM_USED.get(this));
-        return InteractionResult.SUCCESS;
+        if(effect != null) {
+            player.addEffect(new MobEffectInstance(effect, 600));
+            player.awardStat(Stats.ITEM_USED.get(this));
+            return InteractionResult.SUCCESS;
+        }
+        return InteractionResult.PASS;
     }
+
 }
