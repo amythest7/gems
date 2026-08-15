@@ -10,6 +10,8 @@
     "stardust:gold_ring_sapphire",
     "stardust:gold_ring_amethyst",
     "stardust:gold_ring_spinel",
+    "stardust:gold_ring_diamond",
+
 
     "stardust:netherite_ring",
     "stardust:netherite_ring_ruby",
@@ -20,6 +22,7 @@
     "stardust:netherite_ring_sapphire",
     "stardust:netherite_ring_amethyst",
     "stardust:netherite_ring_spinel",
+    "stardust:netherite_ring_diamond",
 
     "stardust:stardust_ring",
     "stardust:stardust_ring_ruby",
@@ -29,6 +32,7 @@
     "stardust:stardust_ring_aquamarine",
     "stardust:stardust_ring_sapphire",
     "stardust:stardust_ring_amethyst",
-    "stardust:stardust_ring_spinel"
+    "stardust:stardust_ring_spinel",
+    "stardust:stardust_ring_diamond"
   ]
 }

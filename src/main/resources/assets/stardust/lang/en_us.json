@@ -11,6 +11,15 @@
   "item.stardust.amethyst": "Amethyst",
   "item.stardust.spinel": "Spinel",
 
+  "item.stardust.ruby_heart": "Ruby Soul",
+  "item.stardust.sapphire_heart": "Sapphire Soul",
+  "item.stardust.topaz_heart": "Topaz Soul",
+  "item.stardust.citrine_heart": "Citrine Soul",
+  "item.stardust.amethyst_heart": "Amethyst Soul",
+  "item.stardust.spinel_heart": "Spinel Soul",
+  "item.stardust.aquamarine_heart": "Aquamarine Soul",
+  "item.stardust.emerald_heart": "Emerald Soul",
+
   "item.stardust.gold_ring_ruby": "Ruby Gold Ring",
   "item.stardust.gold_ring_sapphire": "Sapphire Gold Ring",
   "item.stardust.gold_ring_topaz": "Topaz Gold Ring",
@@ -135,5 +144,9 @@
   "item.stardust.music_disc_infinite_amethyst": "Music Disc",
   "jukebox_song.stardust.music_disc_infinite_amethyst": "Lena Raine - Infinite Amethyst",
 
-  "trim_material.stardust.ruby": "Ruby"
+  "trim_material.stardust.ruby": "Ruby",
+
+  "key.stardust.ring_effect": "Ring Effect",
+
+  "trinkets.slot.chest.soul": "Soul"
 }

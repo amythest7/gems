@@ -37,6 +37,15 @@ public class ModItems {
     public static Item CITRINE = registerItem("citrine", Item::new);
     public static Item SPINEL = registerItem("spinel", Item::new);
     public static Item AQUAMARINE = registerItem("aquamarine", Item::new);
+
+    public static Item RUBY_HEART = registerItem("ruby_heart", Item::new);
+    public static Item SAPPHIRE_HEART = registerItem("sapphire_heart", Item::new);
+    public static Item TOPAZ_HEART = registerItem("topaz_heart", Item::new);
+    public static Item AMETHYST_HEART = registerItem("amethyst_heart", Item::new);
+    public static Item CITRINE_HEART = registerItem("citrine_heart", Item::new);
+    public static Item SPINEL_HEART = registerItem("spinel_heart", Item::new);
+    public static Item AQUAMARINE_HEART = registerItem("aquamarine_heart", Item::new);
+    public static Item EMERALD_HEART = registerItem("emerald_heart", Item::new);
     
     public static final Item AMETHYST_TORCH = registerItem( "amethyst_torch", properties ->
             new StandingAndWallBlockItem(

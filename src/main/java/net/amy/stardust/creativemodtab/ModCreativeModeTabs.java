@@ -26,6 +26,7 @@ import static net.amy.stardust.item.ModItems.RUBY_TORCH;
 import static net.amy.stardust.item.ModItems.SAPPHIRE_TORCH;
 import static net.amy.stardust.item.ModItems.SPINEL_TORCH;
 import static net.amy.stardust.item.ModItems.TOPAZ_TORCH;*/
+import static net.amy.stardust.item.ModItems.SAPPHIRE_HEART;
 import static net.minecraft.world.item.Items.*;
 
 public class ModCreativeModeTabs {
@@ -151,7 +152,14 @@ public class ModCreativeModeTabs {
 
                         output.accept(MUSIC_DISC_INFINITE_AMETHYST);
 
-
+                        output.accept(AMETHYST_HEART);
+                        output.accept(AQUAMARINE_HEART);
+                        output.accept(CITRINE_HEART);
+                        output.accept(EMERALD_HEART);
+                        output.accept(RUBY_HEART);
+                        output.accept(SAPPHIRE_HEART);
+                        output.accept(SPINEL_HEART);
+                        output.accept(TOPAZ_HEART);
 
 
 

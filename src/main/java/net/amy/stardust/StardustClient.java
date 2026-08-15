@@ -11,11 +11,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 
 
-public class StardustModClient implements ClientModInitializer {
+public class StardustClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ModKeyMappings.register();
-        ClientTickEvents.END_CLIENT_TICK.register(StardustModClient::onEndTick);
+        ClientTickEvents.END_CLIENT_TICK.register(StardustClient::onEndTick);
     }
 
    public static void onEndTick(Minecraft client) {

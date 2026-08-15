@@ -94,6 +94,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(SPINEL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(AQUAMARINE, ModelTemplates.FLAT_ITEM);
 
+        itemModelGenerators.generateFlatItem(RUBY_HEART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(SAPPHIRE_HEART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(TOPAZ_HEART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(AMETHYST_HEART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(CITRINE_HEART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(SPINEL_HEART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(AQUAMARINE_HEART, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(EMERALD_HEART, ModelTemplates.FLAT_ITEM);
+
         itemModelGenerators.generateFlatItem(RUBY_GOLD_RING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(SAPPHIRE_GOLD_RING, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(TOPAZ_GOLD_RING, ModelTemplates.FLAT_ITEM);

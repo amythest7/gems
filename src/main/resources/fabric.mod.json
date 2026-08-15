@@ -19,7 +19,7 @@
 			"net.amy.stardust.Stardust"
 		],
 		"client": [
-			"net.amy.stardust.StardustModClient"
+			"net.amy.stardust.StardustClient"
 		],
 		"fabric-datagen": [
 			"net.amy.stardust.StardustDataGenerator"
