@@ -21,7 +21,7 @@ import java.util.function.Consumer;
 public class GoldRingItem extends RingItem {
 
 
-    private Holder<MobEffect> effect;
+    public Holder<MobEffect> effect;
 
     public GoldRingItem(Properties properties, Holder<MobEffect> effect) {
         super(properties.stacksTo(1).useCooldown(45));

@@ -4,6 +4,7 @@ import net.amy.stardust.block.ModBlocks;
 import net.amy.stardust.creativemodtab.ModCreativeModeTabs;
 import net.amy.stardust.item.ModItems;
 import net.amy.stardust.keymapping.ModKeyMappings;
+import net.amy.stardust.networking.ModPackets;
 import net.amy.stardust.particle.AmethystFlameParticle;
 import net.amy.stardust.particle.ModParticles;
 import net.amy.stardust.sounds.ModSoundEvents;
@@ -38,6 +39,7 @@ public class Stardust implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModSoundEvents.registerSounds();
 		ModParticles.registerParticles();
+		ModPackets.registerPackets();
 
 		ParticleProviderRegistry.getInstance().register(ModParticles.AMETHYST_FLAME, AmethystFlameParticle.Provider::new);
 		ParticleProviderRegistry.getInstance().register(ModParticles.RUBY_FLAME, AmethystFlameParticle.Provider::new);

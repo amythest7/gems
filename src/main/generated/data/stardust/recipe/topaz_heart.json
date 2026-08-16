@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "souls",
+  "key": {
+    "C": "stardust:crystallised_stardust",
+    "N": "minecraft:nether_star",
+    "R": "stardust:topaz"
+  },
+  "pattern": [
+    "RCR",
+    "CNC",
+    "RCR"
+  ],
+  "result": {
+    "id": "stardust:topaz_heart"
+  }
+}

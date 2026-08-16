@@ -2,11 +2,12 @@
   "type": "minecraft:crafting_shaped",
   "group": "rings",
   "key": {
-    "G": "stardust:crystallised_stardust"
+    "G": "stardust:crystallised_stardust",
+    "N": "stardust:netherite_ring"
   },
   "pattern": [
     "GGG",
-    "G G",
+    "GNG",
     "GGG"
   ],
   "result": {

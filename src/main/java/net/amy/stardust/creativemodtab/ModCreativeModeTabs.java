@@ -161,6 +161,8 @@ public class ModCreativeModeTabs {
                         output.accept(SPINEL_HEART);
                         output.accept(TOPAZ_HEART);
 
+                        output.accept(OMEGA_HEART);
+
 
 
 

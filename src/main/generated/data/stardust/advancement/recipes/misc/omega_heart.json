@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_empty_lantern": {
+    "has_golden_dandelion": {
       "conditions": {
         "items": [
           {
-            "items": "stardust:empty_lantern"
+            "items": "minecraft:golden_dandelion"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "stardust:stardust_lantern"
+        "recipe": "stardust:omega_heart"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_empty_lantern"
+      "has_golden_dandelion"
     ]
   ],
   "rewards": {
     "recipes": [
-      "stardust:stardust_lantern"
+      "stardust:omega_heart"
     ]
   }
 }

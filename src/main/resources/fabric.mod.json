@@ -19,7 +19,8 @@
 			"net.amy.stardust.Stardust"
 		],
 		"client": [
-			"net.amy.stardust.StardustClient"
+			"net.amy.stardust.StardustClient",
+			"net.amy.stardust.client.rendering.hud.HudRenderingEntrypoint"
 		],
 		"fabric-datagen": [
 			"net.amy.stardust.StardustDataGenerator"

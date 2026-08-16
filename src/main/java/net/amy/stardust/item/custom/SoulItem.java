@@ -5,7 +5,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.Item;
 
 public class SoulItem extends Item implements TrinketCallback {
-    public SoulItem(Properties properties, MobEffect effect) {
+    public SoulItem(Properties properties) {
         super(properties);
     }
 }

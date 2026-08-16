@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "souls",
+  "key": {
+    "A": "stardust:amethyst_heart",
+    "C": "stardust:citrine_heart",
+    "E": "stardust:emerald_heart",
+    "G": "minecraft:golden_dandelion",
+    "P": "stardust:spinel_heart",
+    "Q": "stardust:aquamarine_heart",
+    "R": "stardust:ruby_heart",
+    "S": "stardust:sapphire_heart",
+    "T": "stardust:topaz_heart"
+  },
+  "pattern": [
+    "RCT",
+    "PGE",
+    "ASQ"
+  ],
+  "result": {
+    "id": "stardust:omega_heart"
+  }
+}

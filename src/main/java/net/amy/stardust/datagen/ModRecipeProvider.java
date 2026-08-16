@@ -8,14 +8,19 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.ShapedRecipeBuilder;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CampfireCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
+
+import static net.minecraft.data.recipes.RecipeProvider.getHasName;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricPackOutput output, CompletableFuture<HolderLookup.Provider> registriesFuture) {
@@ -36,6 +41,9 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 stonecutterResultFromBase(RecipeCategory.MISC, ModItems.CRYSTALLISED_STARDUST, ModItems.STARDUST);
                 simpleCookingRecipe("campfire_cooking", CampfireCookingRecipe::new, 600, ModItems.UNREFINED_STARDUST, ModItems.STARDUST, 0.35F);
 
+
+
+
                 shaped(RecipeCategory.MISC, ModBlocks.CRYSTALLISED_STARDUST_BLOCK)
                         .pattern("CC")
                         .pattern("CC")
@@ -53,124 +61,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("rings")
                         .save(output);
                 
-                shapeless(RecipeCategory.MISC, ModItems.RUBY_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(ModItems.RUBY)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(ModItems.SAPPHIRE)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.EMERALD_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(Items.EMERALD)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.AMETHYST_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(ModItems.AMETHYST)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.TOPAZ_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(ModItems.TOPAZ)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.CITRINE_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(ModItems.CITRINE)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.DIAMOND_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(Items.DIAMOND)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.SPINEL_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(ModItems.SPINEL)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
 
                 shaped(RecipeCategory.MISC, ModItems.STARDUST_RING)
                         .pattern("GGG")
-                        .pattern("G G")
+                        .pattern("GNG")
                         .pattern("GGG")
                         .define('G', ModItems.CRYSTALLISED_STARDUST)
+                        .define('N', ModItems.NETHERITE_RING)
                         .unlockedBy(getHasName(ModItems.CRYSTALLISED_STARDUST), has(ModItems.CRYSTALLISED_STARDUST))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.RUBY_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(ModItems.RUBY)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(ModItems.SAPPHIRE)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.EMERALD_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(Items.EMERALD)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.AMETHYST_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(ModItems.AMETHYST)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.TOPAZ_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(ModItems.TOPAZ)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.CITRINE_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(ModItems.CITRINE)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.DIAMOND_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(Items.DIAMOND)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.SPINEL_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(ModItems.SPINEL)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
                         .group("rings")
                         .save(output);
 
@@ -184,240 +82,73 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .group("rings")
                         .save(output);
 
-                shapeless(RecipeCategory.MISC, ModItems.RUBY_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(ModItems.RUBY)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
+                shaped(RecipeCategory.MISC, ModItems.OMEGA_HEART)
+                        .pattern("RCT")
+                        .pattern("PGE")
+                        .pattern("ASQ")
+                        .define('R', ModItems.RUBY_HEART)
+                        .define('C', ModItems.CITRINE_HEART)
+                        .define('T', ModItems.TOPAZ_HEART)
+                        .define('P', ModItems.SPINEL_HEART)
+                        .define('G', Items.GOLDEN_DANDELION)
+                        .define('E', ModItems.EMERALD_HEART)
+                        .define('A', ModItems.AMETHYST_HEART)
+                        .define('S', ModItems.SAPPHIRE_HEART)
+                        .define('Q', ModItems.AQUAMARINE_HEART)
+                        .unlockedBy(getHasName(Items.GOLDEN_DANDELION), has(Items.GOLDEN_DANDELION))
+                        .group("souls")
                         .save(output);
 
-                shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(ModItems.SAPPHIRE)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
+                ringRecipe(this, ModItems.RUBY, ModItems.GOLD_RING, ModItems.RUBY_GOLD_RING, output);
+                ringRecipe(this, ModItems.SAPPHIRE, ModItems.GOLD_RING, ModItems.SAPPHIRE_GOLD_RING, output);
+                ringRecipe(this, ModItems.TOPAZ, ModItems.GOLD_RING, ModItems.TOPAZ_GOLD_RING, output);
+                ringRecipe(this, ModItems.AQUAMARINE, ModItems.GOLD_RING, ModItems.AQUAMARINE_GOLD_RING, output);
+                ringRecipe(this, ModItems.AMETHYST, ModItems.GOLD_RING, ModItems.AMETHYST_GOLD_RING, output);
+                ringRecipe(this, Items.EMERALD, ModItems.GOLD_RING, ModItems.EMERALD_GOLD_RING, output);
+                ringRecipe(this, ModItems.CITRINE, ModItems.GOLD_RING, ModItems.CITRINE_GOLD_RING, output);
+                ringRecipe(this, ModItems.SPINEL, ModItems.GOLD_RING, ModItems.SPINEL_GOLD_RING, output);
+                ringRecipe(this, Items.DIAMOND, ModItems.GOLD_RING, ModItems.DIAMOND_GOLD_RING, output);
 
-                shapeless(RecipeCategory.MISC, ModItems.EMERALD_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(Items.EMERALD)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
+                ringRecipe(this, ModItems.RUBY, ModItems.NETHERITE_RING, ModItems.RUBY_NETHERITE_RING, output);
+                ringRecipe(this, ModItems.SAPPHIRE, ModItems.NETHERITE_RING, ModItems.SAPPHIRE_NETHERITE_RING, output);
+                ringRecipe(this, ModItems.TOPAZ, ModItems.NETHERITE_RING, ModItems.TOPAZ_NETHERITE_RING, output);
+                ringRecipe(this, ModItems.AQUAMARINE, ModItems.NETHERITE_RING, ModItems.AQUAMARINE_NETHERITE_RING, output);
+                ringRecipe(this, ModItems.AMETHYST, ModItems.NETHERITE_RING, ModItems.AMETHYST_NETHERITE_RING, output);
+                ringRecipe(this, Items.EMERALD, ModItems.NETHERITE_RING, ModItems.EMERALD_NETHERITE_RING, output);
+                ringRecipe(this, ModItems.CITRINE, ModItems.NETHERITE_RING, ModItems.CITRINE_NETHERITE_RING, output);
+                ringRecipe(this, ModItems.SPINEL, ModItems.NETHERITE_RING, ModItems.SPINEL_NETHERITE_RING, output);
+                ringRecipe(this, Items.DIAMOND, ModItems.NETHERITE_RING, ModItems.DIAMOND_NETHERITE_RING, output);
 
-                shapeless(RecipeCategory.MISC, ModItems.AMETHYST_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(ModItems.AMETHYST)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.TOPAZ_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(ModItems.TOPAZ)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.CITRINE_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(ModItems.CITRINE)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.DIAMOND_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(Items.DIAMOND)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.SPINEL_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(ModItems.SPINEL)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
+                ringRecipe(this, ModItems.RUBY, ModItems.STARDUST_RING, ModItems.RUBY_STARDUST_RING, output);
+                ringRecipe(this, ModItems.SAPPHIRE, ModItems.STARDUST_RING, ModItems.SAPPHIRE_STARDUST_RING, output);
+                ringRecipe(this, ModItems.TOPAZ, ModItems.STARDUST_RING, ModItems.TOPAZ_STARDUST_RING, output);
+                ringRecipe(this, ModItems.AQUAMARINE, ModItems.STARDUST_RING, ModItems.AQUAMARINE_STARDUST_RING, output);
+                ringRecipe(this, ModItems.AMETHYST, ModItems.STARDUST_RING, ModItems.AMETHYST_STARDUST_RING, output);
+                ringRecipe(this, Items.EMERALD, ModItems.STARDUST_RING, ModItems.EMERALD_STARDUST_RING, output);
+                ringRecipe(this, ModItems.CITRINE, ModItems.STARDUST_RING, ModItems.CITRINE_STARDUST_RING, output);
+                ringRecipe(this, ModItems.SPINEL, ModItems.STARDUST_RING, ModItems.SPINEL_STARDUST_RING, output);
+                ringRecipe(this, Items.DIAMOND, ModItems.STARDUST_RING, ModItems.DIAMOND_STARDUST_RING, output);
                 
                 
+                lanternRecipe(this, ModItems.RUBY, ModBlocks.RUBY_LANTERN, output);
+                lanternRecipe(this, ModItems.SAPPHIRE, ModBlocks.SAPPHIRE_LANTERN, output);
+                lanternRecipe(this, ModItems.TOPAZ, ModBlocks.TOPAZ_LANTERN, output);
+                lanternRecipe(this, ModItems.AQUAMARINE, ModBlocks.AQUAMARINE_LANTERN, output);
+                lanternRecipe(this, ModItems.AMETHYST, ModBlocks.AMETHYST_LANTERN, output);
+                lanternRecipe(this, Items.EMERALD, ModBlocks.EMERALD_LANTERN, output);
+                lanternRecipe(this, ModItems.CITRINE, ModBlocks.CITRINE_LANTERN, output);
+                lanternRecipe(this, ModItems.SPINEL, ModBlocks.SPINEL_LANTERN, output);
 
-                shapeless(RecipeCategory.MISC, ModItems.AQUAMARINE_GOLD_RING)
-                        .requires(ModItems.GOLD_RING)
-                        .requires(ModItems.AQUAMARINE)
-                        .unlockedBy(getHasName(ModItems.GOLD_RING), has(ModItems.GOLD_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.AQUAMARINE_STARDUST_RING)
-                        .requires(ModItems.STARDUST_RING)
-                        .requires(ModItems.AQUAMARINE)
-                        .unlockedBy(getHasName(ModItems.STARDUST_RING), has(ModItems.STARDUST_RING))
-                        .group("rings")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModItems.AQUAMARINE_NETHERITE_RING)
-                        .requires(ModItems.NETHERITE_RING)
-                        .requires(ModItems.AQUAMARINE)
-                        .unlockedBy(getHasName(ModItems.NETHERITE_RING), has(ModItems.NETHERITE_RING))
-                        .group("rings")
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.EMPTY_LANTERN)
-                        .pattern("III")
-                        .pattern("IGI")
-                        .pattern("III")
-                        .define('I', Items.IRON_NUGGET)
-                        .define('G', Blocks.TINTED_GLASS)
-                        .unlockedBy(getHasName(Blocks.TINTED_GLASS), has(Blocks.TINTED_GLASS))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.RUBY_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.RUBY)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.SAPPHIRE_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.SAPPHIRE)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.EMERALD_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(Items.EMERALD)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.AMETHYST_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.AMETHYST)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.TOPAZ_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.TOPAZ)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.CITRINE_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.CITRINE)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.SPINEL_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.SPINEL)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.STARDUST_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.STARDUST)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shapeless(RecipeCategory.MISC, ModBlocks.AQUAMARINE_LANTERN)
-                        .requires(ModBlocks.EMPTY_LANTERN)
-                        .requires(ModItems.AQUAMARINE)
-                        .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), has(ModBlocks.EMPTY_LANTERN))
-                        .group("gem_lanterns")
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.AMETHYST_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', ModItems.AMETHYST)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(ModItems.AMETHYST), has(ModItems.AMETHYST))
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.RUBY_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', ModItems.RUBY)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY))
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', ModItems.SAPPHIRE)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE))
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.EMERALD_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', Items.EMERALD)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD))
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.TOPAZ_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', ModItems.TOPAZ)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(ModItems.TOPAZ), has(ModItems.TOPAZ))
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.CITRINE_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', ModItems.CITRINE)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(ModItems.CITRINE), has(ModItems.CITRINE))
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.SPINEL_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', ModItems.SPINEL)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(ModItems.SPINEL), has(ModItems.SPINEL))
-                        .save(output);
-
-                shaped(RecipeCategory.MISC, ModBlocks.AQUAMARINE_TORCH)
-                        .pattern(" A ")
-                        .pattern(" S ")
-                        .pattern(" C ")
-                        .define('A', ModItems.AQUAMARINE)
-                        .define('C', Items.STICK)
-                        .define('S', Items.COAL)
-                        .unlockedBy(getHasName(ModItems.AQUAMARINE), has(ModItems.AQUAMARINE))
-                        .save(output);
+                torchRecipe(this, ModItems.RUBY, ModItems.RUBY_TORCH, output);
+                torchRecipe(this, ModItems.SAPPHIRE, ModItems.SAPPHIRE_TORCH, output);
+                torchRecipe(this, ModItems.TOPAZ, ModItems.TOPAZ_TORCH, output);
+                torchRecipe(this, ModItems.AQUAMARINE, ModItems.AQUAMARINE_TORCH, output);
+                torchRecipe(this, ModItems.AMETHYST, ModItems.AMETHYST_TORCH, output);
+                torchRecipe(this, Items.EMERALD, ModItems.EMERALD_TORCH, output);
+                torchRecipe(this, ModItems.CITRINE, ModItems.CITRINE_TORCH, output);
+                torchRecipe(this, ModItems.SPINEL, ModItems.SPINEL_TORCH, output);
                 
                 
-
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_BLOCK, ModItems.RUBY, getHasName(ModItems.RUBY));
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_BLOCK, ModItems.SAPPHIRE, getHasName(ModItems.SAPPHIRE));
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.TOPAZ_BLOCK, ModItems.TOPAZ, getHasName(ModItems.TOPAZ));
@@ -425,11 +156,63 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPINEL_BLOCK, ModItems.SPINEL, getHasName(ModItems.SPINEL));
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AQUAMARINE_BLOCK, ModItems.AQUAMARINE, getHasName(ModItems.AQUAMARINE));
                 threeByThreePacker(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMETHYST_GEM_BLOCK, ModItems.AMETHYST, getHasName(ModItems.AMETHYST));
-                
+
+                soulRecipe(this, ModItems.RUBY, ModItems.RUBY_HEART, output);
+                soulRecipe(this, ModItems.SAPPHIRE, ModItems.SAPPHIRE_HEART, output);
+                soulRecipe(this, ModItems.TOPAZ, ModItems.TOPAZ_HEART, output);
+                soulRecipe(this, ModItems.AQUAMARINE, ModItems.AQUAMARINE_HEART, output);
+                soulRecipe(this, ModItems.AMETHYST, ModItems.AMETHYST_HEART, output);
+                soulRecipe(this, Items.EMERALD, ModItems.EMERALD_HEART, output);
+                soulRecipe(this, ModItems.CITRINE, ModItems.CITRINE_HEART, output);
+                soulRecipe(this, ModItems.SPINEL, ModItems.SPINEL_HEART, output);
+
             }
             
             
         };
+    }
+
+    private void soulRecipe(RecipeProvider provider, Item input, Item outputItem, RecipeOutput output) {
+        provider.shaped(RecipeCategory.MISC, outputItem)
+                .pattern("RCR")
+                .pattern("CNC")
+                .pattern("RCR")
+                .define('C', ModItems.CRYSTALLISED_STARDUST)
+                .define('R', input)
+                .define('N', Items.NETHER_STAR)
+                .unlockedBy(getHasName(input), provider.has(input))
+                .group("souls")
+                .save(output);
+    }
+
+    private void torchRecipe(RecipeProvider provider, Item input, Item outputItem, RecipeOutput output) {
+        provider.shaped(RecipeCategory.MISC, outputItem)
+                .pattern(" A ")
+                .pattern(" S ")
+                .pattern(" C ")
+                .define('A', input)
+                .define('C', Items.STICK)
+                .define('S', Items.COAL)
+                .unlockedBy(getHasName(input), provider.has(input))
+                .save(output);
+    }
+
+    private void lanternRecipe(RecipeProvider provider, Item input, Block outputBlock, RecipeOutput output) {
+        provider.shapeless(RecipeCategory.MISC, outputBlock)
+                .requires(ModBlocks.EMPTY_LANTERN)
+                .requires(input)
+                .unlockedBy(getHasName(ModBlocks.EMPTY_LANTERN), provider.has(ModBlocks.EMPTY_LANTERN))
+                .group("gem_lanterns")
+                .save(output);
+    }
+
+    private void ringRecipe(RecipeProvider provider, Item input, Item ring, Item outputItem, RecipeOutput output) {
+        provider.shapeless(RecipeCategory.MISC, outputItem)
+                .requires(ring)
+                .requires(input)
+                .unlockedBy(getHasName(ring), provider.has(ring))
+                .group("rings")
+                .save(output);
     }
 
     @Override

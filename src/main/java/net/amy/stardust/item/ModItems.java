@@ -2,10 +2,7 @@ package net.amy.stardust.item;
 
 import net.amy.stardust.Stardust;
 import net.amy.stardust.block.ModBlocks;
-import net.amy.stardust.item.custom.GlaiveItem;
-import net.amy.stardust.item.custom.GoldRingItem;
-import net.amy.stardust.item.custom.NetheriteRingItem;
-import net.amy.stardust.item.custom.StardustRingItem;
+import net.amy.stardust.item.custom.*;
 import net.amy.stardust.sounds.ModSoundEvents;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Direction;
@@ -38,14 +35,15 @@ public class ModItems {
     public static Item SPINEL = registerItem("spinel", Item::new);
     public static Item AQUAMARINE = registerItem("aquamarine", Item::new);
 
-    public static Item RUBY_HEART = registerItem("ruby_heart", Item::new);
-    public static Item SAPPHIRE_HEART = registerItem("sapphire_heart", Item::new);
-    public static Item TOPAZ_HEART = registerItem("topaz_heart", Item::new);
-    public static Item AMETHYST_HEART = registerItem("amethyst_heart", Item::new);
-    public static Item CITRINE_HEART = registerItem("citrine_heart", Item::new);
-    public static Item SPINEL_HEART = registerItem("spinel_heart", Item::new);
-    public static Item AQUAMARINE_HEART = registerItem("aquamarine_heart", Item::new);
-    public static Item EMERALD_HEART = registerItem("emerald_heart", Item::new);
+    public static Item RUBY_HEART = registerItem("ruby_heart", SoulItem::new);
+    public static Item SAPPHIRE_HEART = registerItem("sapphire_heart", SoulItem::new);
+    public static Item TOPAZ_HEART = registerItem("topaz_heart", SoulItem::new);
+    public static Item AMETHYST_HEART = registerItem("amethyst_heart", SoulItem::new);
+    public static Item CITRINE_HEART = registerItem("citrine_heart", SoulItem::new);
+    public static Item SPINEL_HEART = registerItem("spinel_heart", SoulItem::new);
+    public static Item AQUAMARINE_HEART = registerItem("aquamarine_heart", SoulItem::new);
+    public static Item EMERALD_HEART = registerItem("emerald_heart", SoulItem::new);
+    public static Item OMEGA_HEART = registerItem("omega_heart", SoulItem::new);
     
     public static final Item AMETHYST_TORCH = registerItem( "amethyst_torch", properties ->
             new StandingAndWallBlockItem(
