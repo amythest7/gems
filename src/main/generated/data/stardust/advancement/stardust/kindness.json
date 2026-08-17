@@ -1,0 +1,32 @@
+{
+  "parent": "stardust:stardust/root",
+  "criteria": {
+    "has_kindness_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardust:emerald_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.stardust.kindness.description"
+    },
+    "icon": {
+      "id": "stardust:emerald_heart"
+    },
+    "title": {
+      "translate": "advancement.stardust.kindness.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_kindness_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

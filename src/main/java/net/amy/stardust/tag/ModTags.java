@@ -19,6 +19,8 @@ public class ModTags {
 
     public static class Items {
         public static TagKey<Item> STARDUST_TOOL_MATERIAL = createTag("stardust_tool_material");
+        public static TagKey<Item> GEMS = createTag("gems");
+
 
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));

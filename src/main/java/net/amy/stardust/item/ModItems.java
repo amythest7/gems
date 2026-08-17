@@ -3,7 +3,6 @@ package net.amy.stardust.item;
 import net.amy.stardust.Stardust;
 import net.amy.stardust.block.ModBlocks;
 import net.amy.stardust.item.custom.*;
-import net.amy.stardust.sounds.ModSoundEvents;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;

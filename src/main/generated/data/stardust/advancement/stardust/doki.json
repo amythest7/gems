@@ -1,0 +1,32 @@
+{
+  "parent": "stardust:stardust/root",
+  "criteria": {
+    "has_doki_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardust:spinel_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.stardust.doki.description"
+    },
+    "icon": {
+      "id": "stardust:spinel_heart"
+    },
+    "title": {
+      "translate": "advancement.stardust.doki.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_doki_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,6 +1,7 @@
 package net.amy.stardust;
 
 import net.amy.stardust.datagen.*;
+import net.amy.stardust.datagen.advancement.ModAdvancementsProvider;
 import net.amy.stardust.worldgen.ModConfiguredFeatures;
 import net.amy.stardust.worldgen.ModPlacedFeatures;
 import net.amy.stardust.worldgen.ModWorldgenProvider;
@@ -21,6 +22,8 @@ public class StardustDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModItemTagsProvider::new);
 		pack.addProvider(ModRegistryDataGenerator::new);
 		pack.addProvider(ModWorldgenProvider::new);
+		pack.addProvider(ModAdvancementsProvider::new);
+
 	}
 
 	@Override

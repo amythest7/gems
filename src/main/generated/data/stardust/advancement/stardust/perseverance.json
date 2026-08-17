@@ -1,0 +1,32 @@
+{
+  "parent": "stardust:stardust/root",
+  "criteria": {
+    "has_perseverance_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardust:amethyst_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.stardust.perseverance.description"
+    },
+    "icon": {
+      "id": "stardust:amethyst_heart"
+    },
+    "title": {
+      "translate": "advancement.stardust.perseverance.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_perseverance_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

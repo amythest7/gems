@@ -1,0 +1,32 @@
+{
+  "parent": "stardust:stardust/root",
+  "criteria": {
+    "has_determination_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardust:ruby_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.stardust.determination.description"
+    },
+    "icon": {
+      "id": "stardust:ruby_heart"
+    },
+    "title": {
+      "translate": "advancement.stardust.determination.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_determination_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

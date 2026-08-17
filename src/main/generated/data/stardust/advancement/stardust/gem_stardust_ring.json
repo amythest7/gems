@@ -1,0 +1,34 @@
+{
+  "parent": "stardust:stardust/gem_netherite_ring",
+  "criteria": {
+    "has_ring": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardust:stardust_ring_diamond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.stardust.gem_stardust_ring.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "id": "stardust:stardust_ring_diamond"
+    },
+    "title": {
+      "translate": "advancement.stardust.gem_stardust_ring.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_ring"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

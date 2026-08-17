@@ -1,0 +1,32 @@
+{
+  "parent": "stardust:stardust/root",
+  "criteria": {
+    "has_integrity_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardust:sapphire_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.stardust.integrity.description"
+    },
+    "icon": {
+      "id": "stardust:sapphire_heart"
+    },
+    "title": {
+      "translate": "advancement.stardust.integrity.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_integrity_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

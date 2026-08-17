@@ -1,0 +1,32 @@
+{
+  "parent": "stardust:stardust/root",
+  "criteria": {
+    "has_bravery_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "stardust:citrine_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.stardust.bravery.description"
+    },
+    "icon": {
+      "id": "stardust:citrine_heart"
+    },
+    "title": {
+      "translate": "advancement.stardust.bravery.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_bravery_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
