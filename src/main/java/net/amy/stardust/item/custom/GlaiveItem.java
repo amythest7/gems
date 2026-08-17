@@ -15,6 +15,7 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ToolMaterial;
+import net.minecraft.world.item.component.AttackRange;
 import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.item.component.Weapon;
@@ -29,8 +30,11 @@ public class GlaiveItem extends Item {
     private static final Identifier INTERACTION_RANGE_MODIFIER_ID =
             Identifier.fromNamespaceAndPath(MOD_ID, "interaction_range_bonus");
 
+    float attackReachBaseline;
+
     public GlaiveItem( ToolMaterial material, float attackDamageBaseline, float attackSpeedBaseline, float attackReachBaseline, Properties properties) {
         super(properties.sword(material, attackDamageBaseline, attackSpeedBaseline));
+        this.attackReachBaseline = attackReachBaseline;
     }
 
     public static ItemAttributeModifiers createAttributes(ToolMaterial material, float attackDamageBaseline, float attackSpeedBaseline, float attackReachBaseline) {

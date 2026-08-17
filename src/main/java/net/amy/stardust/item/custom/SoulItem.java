@@ -8,4 +8,5 @@ public class SoulItem extends Item implements TrinketCallback {
     public SoulItem(Properties properties) {
         super(properties);
     }
+    //TODO Add functionality to souls
 }

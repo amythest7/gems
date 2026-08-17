@@ -41,16 +41,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 stonecutterResultFromBase(RecipeCategory.MISC, ModItems.CRYSTALLISED_STARDUST, ModItems.STARDUST);
                 simpleCookingRecipe("campfire_cooking", CampfireCookingRecipe::new, 600, ModItems.UNREFINED_STARDUST, ModItems.STARDUST, 0.35F);
 
-
-
-
-                shaped(RecipeCategory.MISC, ModBlocks.CRYSTALLISED_STARDUST_BLOCK)
-                        .pattern("CC")
-                        .pattern("CC")
-                        .define('C', ModItems.CRYSTALLISED_STARDUST)
-                        .unlockedBy(getHasName(ModItems.CRYSTALLISED_STARDUST), has(ModItems.CRYSTALLISED_STARDUST))
-                        .group("stardust_block")
-                        .save(output);
+                twoByTwoPacker(RecipeCategory.MISC, ModBlocks.CRYSTALLISED_STARDUST_BLOCK, ModItems.CRYSTALLISED_STARDUST);
 
                 shaped(RecipeCategory.MISC, ModItems.GOLD_RING)
                         .pattern("GGG")

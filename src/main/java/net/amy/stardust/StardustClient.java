@@ -1,16 +1,15 @@
 package net.amy.stardust;
 
-import eu.pb4.trinkets.api.TrinketsApi;
-import net.amy.stardust.item.custom.RingItem;
 import net.amy.stardust.keymapping.ModKeyMappings;
 import net.amy.stardust.networking.packet.RingEffectPayloadC2S;
+import net.amy.stardust.particle.ModParticles;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.client.particle.v1.ParticleProviderRegistry;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.client.particle.FlameParticle;
+import net.minecraft.core.particles.SimpleParticleType;
 
 
 public class StardustClient implements ClientModInitializer {
@@ -18,6 +17,15 @@ public class StardustClient implements ClientModInitializer {
     public void onInitializeClient() {
         ModKeyMappings.register();
         ClientTickEvents.END_CLIENT_TICK.register(StardustClient::onEndTick);
+
+        registerFlameParticle(ModParticles.RUBY_FLAME);
+        registerFlameParticle(ModParticles.SAPPHIRE_FLAME);
+        registerFlameParticle(ModParticles.EMERALD_FLAME);
+        registerFlameParticle(ModParticles.TOPAZ_FLAME);
+        registerFlameParticle(ModParticles.CITRINE_FLAME);
+        registerFlameParticle(ModParticles.SPINEL_FLAME);
+        registerFlameParticle(ModParticles.AMETHYST_FLAME);
+        registerFlameParticle(ModParticles.AQUAMARINE_FLAME);
     }
 
    public static void onEndTick(Minecraft client) {
@@ -25,5 +33,9 @@ public class StardustClient implements ClientModInitializer {
             ClientPlayNetworking.send(new RingEffectPayloadC2S("RingEffectTriggered", 0));
 
         }
+   }
+
+   private static void registerFlameParticle(SimpleParticleType particle) {
+       ParticleProviderRegistry.getInstance().register(particle, FlameParticle.Provider::new);
    }
 }

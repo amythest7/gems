@@ -10,6 +10,7 @@
   "item.stardust.citrine": "Citrine",
   "item.stardust.amethyst": "Amethyst",
   "item.stardust.spinel": "Spinel",
+  "item.stardust.aquamarine": "Aquamarine",
 
   "item.stardust.ruby_heart": "Ruby Soul",
   "item.stardust.sapphire_heart": "Sapphire Soul",
@@ -30,6 +31,7 @@
   "item.stardust.gold_ring": "Gold Ring",
   "item.stardust.gold_ring_emerald": "Emerald Gold Ring",
   "item.stardust.gold_ring_diamond": "Diamond Gold Ring",
+  "item.stardust.gold_ring_aquamarine": "Aquamarine Gold Ring",
 
   "item.stardust.stardust_ring_ruby": "Ruby Stardust Ring",
   "item.stardust.stardust_ring_sapphire": "Sapphire Stardust Ring",
@@ -40,6 +42,7 @@
   "item.stardust.stardust_ring": "Stardust Ring",
   "item.stardust.stardust_ring_emerald": "Emerald Stardust Ring",
   "item.stardust.stardust_ring_diamond": "Diamond Stardust Ring",
+  "item.stardust.stardust_ring_aquamarine": "Aquamarine Stardust Ring",
 
   "item.stardust.netherite_ring_ruby": "Ruby Netherite Ring",
   "item.stardust.netherite_ring_sapphire": "Sapphire Netherite Ring",
@@ -50,10 +53,11 @@
   "item.stardust.netherite_ring": "Netherite Ring",
   "item.stardust.netherite_ring_emerald": "Emerald Netherite Ring",
   "item.stardust.netherite_ring_diamond": "Diamond Netherite Ring",
+  "item.stardust.netherite_ring_aquamarine": "Aquamarine Netherite Ring",
+
 
   "block.stardust.crystallised_stardust_block": "Block of Crystallised Stardust",
   "block.stardust.stardust_ore": "Stardust Ore",
-
 
   "block.stardust.ruby_ore": "Ruby Ore",
   "block.stardust.deepslate_ruby_ore": "Deepslate Ruby Ore",
@@ -67,18 +71,12 @@
   "block.stardust.deepslate_citrine_ore": "Deepslate Citrine Ore",
   "block.stardust.spinel_ore": "Spinel Ore",
   "block.stardust.deepslate_spinel_ore": "Deepslate Spinel Ore",
-
-
-  "item.stardust.aquamarine": "Aquamarine",
   "block.stardust.aquamarine_ore": "Aquamarine Ore",
   "block.stardust.deepslate_aquamarine_ore": "Deepslate Aquamarine Ore",
-  "item.stardust.netherite_ring_aquamarine": "Aquamarine Netherite Ring",
-  "item.stardust.stardust_ring_aquamarine": "Aquamarine Stardust Ring",
-  "item.stardust.gold_ring_aquamarine": "Aquamarine Gold Ring",
 
   "creativemodetab.stardust.stardust_items": "Stardust",
   "creativemodetab.stardust.gem_items": "Gems",
-  "itemgroup.stardust.music_disc_items": "Music Discs",
+  "creativemodetab.stardust.music_disc_items": "Music Discs",
 
   "block.stardust.ruby_lantern": "Ruby Lantern",
   "block.stardust.sapphire_lantern": "Sapphire Lantern",
@@ -116,6 +114,7 @@
   "tooltip.stardust.gold_ring_spinel": "§9Saturation I (0:30), Cooldown (0:45)",
   "tooltip.stardust.gold_ring_emerald": "§9Hero Of The Village I (0:30), Cooldown (0:45)",
   "tooltip.stardust.gold_ring_diamond": "§9Speed I (0:30), Cooldown (0:45)",
+  "tooltip.stardust.gold_ring_aquamarine": "§9Water Breathing (0:30), Cooldown (0:45)",
 
   "tooltip.stardust.stardust_ring_ruby": "§9Regeneration III (1:30), Cooldown (2:15)",
   "tooltip.stardust.stardust_ring_sapphire": "§9Night Vision (1:30), Cooldown (2:15)",
@@ -125,6 +124,7 @@
   "tooltip.stardust.stardust_ring_spinel": "§9Saturation III (1:30), Cooldown (2:15)",
   "tooltip.stardust.stardust_ring_emerald": "§9Hero Of The Village III (1:30), Cooldown (2:15)",
   "tooltip.stardust.stardust_ring_diamond": "§9Speed III (1:30), Cooldown (2:15)",
+  "tooltip.stardust.stardust_ring_aquamarine": "§9Water Breathing (1:30), Cooldown (2:15)",
 
   "tooltip.stardust.netherite_ring_ruby": "§9Regeneration II (1:00), Cooldown (1:30)",
   "tooltip.stardust.netherite_ring_sapphire": "§9Night Vision (1:00), Cooldown (1:30)",
@@ -134,18 +134,13 @@
   "tooltip.stardust.netherite_ring_spinel": "§9Saturation II (1:00), Cooldown (1:30)",
   "tooltip.stardust.netherite_ring_emerald": "§9Hero Of The Village II (1:00), Cooldown (1:30)",
   "tooltip.stardust.netherite_ring_diamond": "§9Speed II (1:00), Cooldown (1:30)",
-
   "tooltip.stardust.netherite_ring_aquamarine": "§9Water Breathing (1:00), Cooldown (1:30)",
-  "tooltip.stardust.stardust_ring_aquamarine": "§9Water Breathing (1:30), Cooldown (2:15)",
-  "tooltip.stardust.gold_ring_aquamarine": "§9Water Breathing (0:30), Cooldown (0:45)",
 
   "item.stardust.music_disc_destructor": "Music Disc",
   "jukebox_song.stardust.music_disc_destructor": "NoughtZeroMusic - Destructor",
 
   "item.stardust.music_disc_infinite_amethyst": "Music Disc",
   "jukebox_song.stardust.music_disc_infinite_amethyst": "Lena Raine - Infinite Amethyst",
-
-  "trim_material.stardust.ruby": "Ruby",
 
   "key.stardust.ring_effect": "Ring Effect",
 

@@ -1,15 +1,10 @@
 package net.amy.stardust.datagen;
 
-import net.amy.stardust.trim.ModTrimMaterials;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.world.item.equipment.trim.MaterialAssetGroup;
-import net.minecraft.world.item.equipment.trim.TrimMaterials;
-
-import java.util.List;
 
 import static net.amy.stardust.block.ModBlocks.*;
 import static net.amy.stardust.block.ModBlocks.AMETHYST_TORCH;

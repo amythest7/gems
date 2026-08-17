@@ -7,6 +7,7 @@ import net.amy.stardust.sounds.ModSoundEvents;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
@@ -14,6 +15,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.component.AttackRange;
 import net.minecraft.world.item.component.TooltipDisplay;
 
 import java.util.function.Consumer;
@@ -35,15 +37,15 @@ public class ModItems {
     public static Item SPINEL = registerItem("spinel", Item::new);
     public static Item AQUAMARINE = registerItem("aquamarine", Item::new);
 
-    public static Item RUBY_HEART = registerItem("ruby_heart", SoulItem::new);
-    public static Item SAPPHIRE_HEART = registerItem("sapphire_heart", SoulItem::new);
-    public static Item TOPAZ_HEART = registerItem("topaz_heart", SoulItem::new);
-    public static Item AMETHYST_HEART = registerItem("amethyst_heart", SoulItem::new);
-    public static Item CITRINE_HEART = registerItem("citrine_heart", SoulItem::new);
-    public static Item SPINEL_HEART = registerItem("spinel_heart", SoulItem::new);
-    public static Item AQUAMARINE_HEART = registerItem("aquamarine_heart", SoulItem::new);
-    public static Item EMERALD_HEART = registerItem("emerald_heart", SoulItem::new);
-    public static Item OMEGA_HEART = registerItem("omega_heart", SoulItem::new);
+    public static Item RUBY_HEART = registerItem("ruby_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item SAPPHIRE_HEART = registerItem("sapphire_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item TOPAZ_HEART = registerItem("topaz_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item AMETHYST_HEART = registerItem("amethyst_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item CITRINE_HEART = registerItem("citrine_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item SPINEL_HEART = registerItem("spinel_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item AQUAMARINE_HEART = registerItem("aquamarine_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item EMERALD_HEART = registerItem("emerald_heart", properties -> new SoulItem(properties.stacksTo(1)));
+    public static Item OMEGA_HEART = registerItem("omega_heart", properties -> new SoulItem(properties.stacksTo(1)));
     
     public static final Item AMETHYST_TORCH = registerItem( "amethyst_torch", properties ->
             new StandingAndWallBlockItem(
@@ -322,6 +324,7 @@ public class ModItems {
             ModToolMaterial.STARDUST, 6f, -2.6f, 0.5f, properties
             .attributes(GlaiveItem.createAttributes(ModToolMaterial.STARDUST, 6f, -2.6f, 0.5f))
             .durability(ModToolMaterial.STARDUST.durability())
+            .component(DataComponents.ATTACK_RANGE, new AttackRange(2.0F, 4.5F, 2.0F, 6.5F, 0.125F, 0.5F))
             .rarity(Rarity.RARE)
             .stacksTo(1)
             ));

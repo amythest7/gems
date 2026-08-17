@@ -21,7 +21,6 @@ public class ModItemTagsProvider extends FabricTagsProvider.ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider registries) {
-        tag(ItemTags.TRIM_MATERIALS)
-                .add(ModItems.getRK(RUBY));
+
     }
 }

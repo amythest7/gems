@@ -94,6 +94,7 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.getRK(AQUAMARINE_BLOCK))
                 .add(ModBlocks.getRK(SPINEL_BLOCK))
                 .add(ModBlocks.getRK(AMETHYST_GEM_BLOCK));
+
         tag(BlockTags.WALL_POST_OVERRIDE)
                 .add(ModBlocks.getRK(AMETHYST_TORCH))
                 .add(ModBlocks.getRK(RUBY_TORCH))
