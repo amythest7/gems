@@ -2,6 +2,7 @@ package net.amy.stardust.creativemodtab;
 
 import net.amy.stardust.Stardust;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
@@ -79,6 +80,15 @@ public class ModCreativeModeTabs {
                         output.accept(SPINEL);
                         output.accept(TOPAZ);
 
+                        output.accept(RAW_RUBY);
+                        output.accept(RAW_SAPPHIRE);
+                        output.accept(RAW_TOPAZ);
+                        output.accept(RAW_AMETHYST);
+                        output.accept(RAW_CITRINE);
+                        output.accept(RAW_SPINEL);
+                        output.accept(RAW_AQUAMARINE);
+                        output.accept(RAW_EMERALD);
+
                         output.accept(AMETHYST_GEM_BLOCK);
                         output.accept(AQUAMARINE_BLOCK);
                         output.accept(CITRINE_BLOCK);
@@ -109,7 +119,6 @@ public class ModCreativeModeTabs {
                         output.accept(DEEPSLATE_SPINEL_ORE);
                         output.accept(DEEPSLATE_TOPAZ_ORE);
 
-                        output.accept(GOLD_RING);
                         output.accept(AQUAMARINE_GOLD_RING);
                         output.accept(AMETHYST_GOLD_RING);
                         output.accept(CITRINE_GOLD_RING);
@@ -120,7 +129,6 @@ public class ModCreativeModeTabs {
                         output.accept(SPINEL_GOLD_RING);
                         output.accept(TOPAZ_GOLD_RING);
 
-                        output.accept(NETHERITE_RING);
                         output.accept(AMETHYST_NETHERITE_RING);
                         output.accept(AQUAMARINE_NETHERITE_RING);
                         output.accept(CITRINE_NETHERITE_RING);
@@ -131,26 +139,23 @@ public class ModCreativeModeTabs {
                         output.accept(SPINEL_NETHERITE_RING);
                         output.accept(TOPAZ_NETHERITE_RING);
 
-                        output.accept(RUBY_LANTERN);
-                        output.accept(SAPPHIRE_LANTERN);
-                        output.accept(TOPAZ_LANTERN);
-                        output.accept(CITRINE_LANTERN);
-                        output.accept(EMERALD_LANTERN);
-                        output.accept(EMPTY_LANTERN);
-                        output.accept(AMETHYST_LANTERN);
-                        output.accept(AQUAMARINE_LANTERN);
-                        output.accept(SPINEL_LANTERN);
-
-                        output.accept(RUBY_TORCH);
-                        output.accept(SAPPHIRE_TORCH);
-                        output.accept(TOPAZ_TORCH);
+                        output.accept(AQUAMARINE_TORCH);
+                        output.accept(AMETHYST_TORCH);
                         output.accept(CITRINE_TORCH);
                         output.accept(EMERALD_TORCH);
-                        output.accept(AMETHYST_TORCH);
-                        output.accept(AQUAMARINE_TORCH);
+                        output.accept(RUBY_TORCH);
+                        output.accept(SAPPHIRE_TORCH);
                         output.accept(SPINEL_TORCH);
+                        output.accept(TOPAZ_TORCH);
 
-                        output.accept(MUSIC_DISC_INFINITE_AMETHYST);
+                        output.accept(AMETHYST_LANTERN);
+                        output.accept(AQUAMARINE_LANTERN);
+                        output.accept(CITRINE_LANTERN);
+                        output.accept(EMERALD_LANTERN);
+                        output.accept(RUBY_LANTERN);
+                        output.accept(SAPPHIRE_LANTERN);
+                        output.accept(SPINEL_LANTERN);
+                        output.accept(TOPAZ_LANTERN);
 
                         output.accept(AMETHYST_HEART);
                         output.accept(AQUAMARINE_HEART);
@@ -162,7 +167,10 @@ public class ModCreativeModeTabs {
                         output.accept(TOPAZ_HEART);
 
                         output.accept(OMEGA_HEART);
-
+                        output.accept(GOLD_RING);
+                        output.accept(NETHERITE_RING);
+                        output.accept(EMPTY_LANTERN);
+                        output.accept(GEM_FACETER);
 
 
 
@@ -191,7 +199,6 @@ public class ModCreativeModeTabs {
 
                         output.accept(MUSIC_DISC_PIGSTEP);
 
-                        output.accept(MUSIC_DISC_INFINITE_AMETHYST);
                         output.accept(MUSIC_DISC_OTHERSIDE);
                         output.accept(MUSIC_DISC_5);
 

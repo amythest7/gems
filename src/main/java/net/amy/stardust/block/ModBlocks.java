@@ -1,6 +1,7 @@
 package net.amy.stardust.block;
 
 import net.amy.stardust.Stardust;
+import net.amy.stardust.block.custom.GemFaceterBlock;
 import net.amy.stardust.particle.ModParticles;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
@@ -400,6 +401,8 @@ public class ModBlocks {
                             .lightLevel(statex -> 14)
                             .sound(SoundType.WOOD)
                             .pushReaction(PushReaction.DESTROY)));
+
+    public static final Block GEM_FACETER = registerBlock("gem_faceter", properties -> new GemFaceterBlock(properties.mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.5F)));
 
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {

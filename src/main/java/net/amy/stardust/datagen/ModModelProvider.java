@@ -1,5 +1,6 @@
 package net.amy.stardust.datagen;
 
+import net.amy.stardust.block.custom.GemFaceterBlock;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -71,6 +72,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(SPINEL_BLOCK);
         blockModelGenerators.createTrivialCube(AMETHYST_GEM_BLOCK);
 
+        blockModelGenerators.createNonTemplateModelBlock(GEM_FACETER);
+
 
     }
 
@@ -88,6 +91,15 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(CITRINE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(SPINEL, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(AQUAMARINE, ModelTemplates.FLAT_ITEM);
+
+        itemModelGenerators.generateFlatItem(RAW_RUBY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RAW_SAPPHIRE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RAW_TOPAZ, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RAW_AMETHYST, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RAW_CITRINE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RAW_SPINEL, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RAW_AQUAMARINE, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(RAW_EMERALD, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(RUBY_HEART, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(SAPPHIRE_HEART, ModelTemplates.FLAT_ITEM);
@@ -134,7 +146,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(AQUAMARINE_STARDUST_RING, ModelTemplates.FLAT_ITEM);
 
         itemModelGenerators.generateFlatItem(MUSIC_DISC_DESTRUCTOR, ModelTemplates.MUSIC_DISC);
-        itemModelGenerators.generateFlatItem(MUSIC_DISC_INFINITE_AMETHYST, ModelTemplates.MUSIC_DISC);
         
 
     }

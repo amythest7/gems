@@ -106,6 +106,8 @@
   "block.stardust.aquamarine_block": "Block Of Aquamarine",
   "block.stardust.amethyst_gem_block": "Block Of Amethyst",
 
+  "block.stardust.gem_faceter": "Gem Faceter",
+
   "tooltip.stardust.gold_ring_ruby": "§9Regeneration I (0:30), Cooldown (0:45)",
   "tooltip.stardust.gold_ring_sapphire": "§9Night Vision (0:30), Cooldown (0:45)",
   "tooltip.stardust.gold_ring_topaz": "§9Haste I (0:30), Cooldown (0:45)",
@@ -158,33 +160,33 @@
   "advancement.stardust.gem_stardust_ring.title": "Will You Marry Me In Life And Death?",
   "advancement.stardust.gem_stardust_ring.description": "Craft a Diamond Stardust Ring.",
 
-  "advancement.stardust.determination.title": "Determination.",
+  "advancement.stardust.determination.title": "Determination",
   "advancement.stardust.determination.description": "Somehow, seeing this Soul made of ruby fills you with Determination.",
 
-  "advancement.stardust.bravery.title": "Bravery.",
+  "advancement.stardust.bravery.title": "Bravery",
   "advancement.stardust.bravery.description": "Somehow, seeing this Soul made of citrine fills you with Bravery.",
 
-  "advancement.stardust.justice.title": "Justice.",
+  "advancement.stardust.justice.title": "Justice",
   "advancement.stardust.justice.description": "Somehow, seeing this Soul made of topaz fills you with Justice.",
 
-  "advancement.stardust.kindness.title": "Kindness.",
+  "advancement.stardust.kindness.title": "Kindness",
   "advancement.stardust.kindness.description": "Somehow, seeing this Soul made of emerald fills you with Kindness.",
 
-  "advancement.stardust.patience.title": "Patience.",
+  "advancement.stardust.patience.title": "Patience",
   "advancement.stardust.patience.description": "Somehow, seeing this Soul made of aquamarine fills you with Patience.",
 
-  "advancement.stardust.integrity.title": "Integrity.",
+  "advancement.stardust.integrity.title": "Integrity",
   "advancement.stardust.integrity.description": "Somehow, seeing this Soul made of sapphire fills you with Integrity.",
 
-  "advancement.stardust.perseverance.title": "Perseverance.",
+  "advancement.stardust.perseverance.title": "Perseverance",
   "advancement.stardust.perseverance.description": "Somehow, seeing this Soul made of amethyst fills you with Perseverance.",
 
-  "advancement.stardust.doki.title": "Doki.",
+  "advancement.stardust.doki.title": "Doki",
   "advancement.stardust.doki.description": "+1 Doki",
 
   "advancement.stardust.max_doki.title": "Doki-meter MAX, mew!",
   "advancement.stardust.max_doki.description": "Special Love-Love Sequence Activated, mew!",
 
-  "advancement.stardust.omega.title": "No You're Supposed To Obey Me!!",
+  "advancement.stardust.omega.title": "No You're Supposed To Obey Me!",
   "advancement.stardust.omega.description": "Somehow, seeing the Omega Soul fills you with Hopes and Dreams."
 }

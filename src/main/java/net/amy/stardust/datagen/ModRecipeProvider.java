@@ -39,9 +39,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 oreBlasting(STARDUST_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.UNREFINED_STARDUST, 0.5f, 150, "stardust");
                 stonecutterResultFromBase(RecipeCategory.MISC, ModItems.STARDUST, ModItems.UNREFINED_STARDUST);
                 stonecutterResultFromBase(RecipeCategory.MISC, ModItems.CRYSTALLISED_STARDUST, ModItems.STARDUST);
+                stonecutterResultFromBase(RecipeCategory.MISC, Items.AMETHYST_SHARD, ModItems.RAW_AMETHYST);
                 simpleCookingRecipe("campfire_cooking", CampfireCookingRecipe::new, 600, ModItems.UNREFINED_STARDUST, ModItems.STARDUST, 0.35F);
 
                 twoByTwoPacker(RecipeCategory.MISC, ModBlocks.CRYSTALLISED_STARDUST_BLOCK, ModItems.CRYSTALLISED_STARDUST);
+
 
                 shaped(RecipeCategory.MISC, ModItems.GOLD_RING)
                         .pattern("GGG")

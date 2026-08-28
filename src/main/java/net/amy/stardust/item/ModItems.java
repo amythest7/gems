@@ -36,6 +36,15 @@ public class ModItems {
     public static Item SPINEL = registerItem("spinel", Item::new);
     public static Item AQUAMARINE = registerItem("aquamarine", Item::new);
 
+    public static Item RAW_RUBY = registerItem("raw_ruby", Item::new);
+    public static Item RAW_SAPPHIRE = registerItem("raw_sapphire", Item::new);
+    public static Item RAW_TOPAZ = registerItem("raw_topaz", Item::new);
+    public static Item RAW_AMETHYST = registerItem("raw_amethyst", Item::new);
+    public static Item RAW_EMERALD = registerItem("raw_emerald", Item::new);
+    public static Item RAW_CITRINE = registerItem("raw_citrine", Item::new);
+    public static Item RAW_SPINEL = registerItem("raw_spinel", Item::new);
+    public static Item RAW_AQUAMARINE = registerItem("raw_aquamarine", Item::new);
+
     public static Item RUBY_HEART = registerItem("ruby_heart", properties -> new SoulItem(properties.stacksTo(1)));
     public static Item SAPPHIRE_HEART = registerItem("sapphire_heart", properties -> new SoulItem(properties.stacksTo(1)));
     public static Item TOPAZ_HEART = registerItem("topaz_heart", properties -> new SoulItem(properties.stacksTo(1)));
@@ -317,7 +326,6 @@ public class ModItems {
         }
     });
     public static Item MUSIC_DISC_DESTRUCTOR = registerItem("music_disc_destructor", properties -> new Item(properties.stacksTo(1).rarity(Rarity.RARE).jukeboxPlayable(ModJukeboxSongs.DESTRUCTOR)));
-    public static Item MUSIC_DISC_INFINITE_AMETHYST = registerItem("music_disc_infinite_amethyst", properties -> new Item(properties.stacksTo(1).rarity(Rarity.UNCOMMON).jukeboxPlayable(ModJukeboxSongs.INFINITE_AMETHYST)));
     
     public static Item STARDUST_GLAIVE = registerItem("stardust_glaive", properties -> new GlaiveItem(
             ModToolMaterial.STARDUST, 6f, -2.6f, 0.5f, properties
