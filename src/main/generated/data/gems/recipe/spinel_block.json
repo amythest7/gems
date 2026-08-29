@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "gems:spinel",
+    "gems:spinel",
+    "gems:spinel",
+    "gems:spinel",
+    "gems:spinel",
+    "gems:spinel",
+    "gems:spinel",
+    "gems:spinel",
+    "gems:spinel"
+  ],
+  "result": {
+    "id": "gems:spinel_block"
+  }
+}

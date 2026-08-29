@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "gems:ruby",
+    "gems:ruby",
+    "gems:ruby",
+    "gems:ruby",
+    "gems:ruby",
+    "gems:ruby",
+    "gems:ruby",
+    "gems:ruby",
+    "gems:ruby"
+  ],
+  "result": {
+    "id": "gems:ruby_block"
+  }
+}

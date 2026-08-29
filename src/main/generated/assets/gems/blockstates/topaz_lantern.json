@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "gems:block/topaz_lantern"
+    },
+    "hanging=true": {
+      "model": "gems:block/topaz_lantern_hanging"
+    }
+  }
+}

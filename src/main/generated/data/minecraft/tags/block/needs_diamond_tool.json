@@ -1,6 +1,6 @@
 {
   "values": [
-    "stardust:stardust_ore",
-    "stardust:crystallised_stardust_block"
+    "gems:stardust_ore",
+    "gems:crystallised_stardust_block"
   ]
 }

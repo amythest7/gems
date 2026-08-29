@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_kindness_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:emerald_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.kindness.description"
+    },
+    "icon": {
+      "id": "gems:emerald_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.kindness.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_kindness_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

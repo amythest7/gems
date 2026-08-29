@@ -1,14 +1,14 @@
 {
   "replace": false,
   "values": [
-    "stardust:ruby_heart",
-    "stardust:citrine_heart",
-    "stardust:topaz_heart",
-    "stardust:aquamarine_heart",
-    "stardust:sapphire_heart",
-    "stardust:amethyst_heart",
-    "stardust:spinel_heart",
-    "stardust:emerald_heart",
-    "stardust:omega_heart"
+    "gems:ruby_heart",
+    "gems:citrine_heart",
+    "gems:topaz_heart",
+    "gems:aquamarine_heart",
+    "gems:sapphire_heart",
+    "gems:amethyst_heart",
+    "gems:spinel_heart",
+    "gems:emerald_heart",
+    "gems:omega_heart"
   ]
 }

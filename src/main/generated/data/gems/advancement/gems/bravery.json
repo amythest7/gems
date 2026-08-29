@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_bravery_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:citrine_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.bravery.description"
+    },
+    "icon": {
+      "id": "gems:citrine_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.bravery.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_bravery_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

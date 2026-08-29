@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "gems:raw_amethyst",
+  "result": {
+    "id": "minecraft:amethyst_shard"
+  }
+}

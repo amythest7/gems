@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "gems:block/empty_lantern"
+    },
+    "hanging=true": {
+      "model": "gems:block/empty_lantern_hanging"
+    }
+  }
+}

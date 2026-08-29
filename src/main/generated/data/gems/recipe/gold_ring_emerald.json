@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rings",
+  "ingredients": [
+    "gems:gold_ring",
+    "minecraft:emerald"
+  ],
+  "result": {
+    "id": "gems:gold_ring_emerald"
+  }
+}

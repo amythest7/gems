@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_patience_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:aquamarine_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.patience.description"
+    },
+    "icon": {
+      "id": "gems:aquamarine_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.patience.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_patience_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

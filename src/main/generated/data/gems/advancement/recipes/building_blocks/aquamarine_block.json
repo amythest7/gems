@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aquamarine": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:aquamarine"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gems:aquamarine_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_aquamarine"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gems:aquamarine_block"
+    ]
+  }
+}

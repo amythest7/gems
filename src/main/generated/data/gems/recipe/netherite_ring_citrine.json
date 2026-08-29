@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "rings",
+  "ingredients": [
+    "gems:netherite_ring",
+    "gems:citrine"
+  ],
+  "result": {
+    "id": "gems:netherite_ring_citrine"
+  }
+}

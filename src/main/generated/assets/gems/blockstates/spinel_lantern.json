@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "gems:block/spinel_lantern"
+    },
+    "hanging=true": {
+      "model": "gems:block/spinel_lantern_hanging"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_doki_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:spinel_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.doki.description"
+    },
+    "icon": {
+      "id": "gems:spinel_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.doki.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_doki_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

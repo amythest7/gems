@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "gems:sapphire",
+    "gems:sapphire",
+    "gems:sapphire",
+    "gems:sapphire",
+    "gems:sapphire",
+    "gems:sapphire",
+    "gems:sapphire",
+    "gems:sapphire",
+    "gems:sapphire"
+  ],
+  "result": {
+    "id": "gems:sapphire_block"
+  }
+}

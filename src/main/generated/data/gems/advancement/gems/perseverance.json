@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_perseverance_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:amethyst_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.perseverance.description"
+    },
+    "icon": {
+      "id": "gems:amethyst_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.perseverance.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_perseverance_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

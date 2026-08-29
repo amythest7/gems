@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "gems:block/ruby_wall_torch"
+    },
+    "facing=north": {
+      "model": "gems:block/ruby_wall_torch",
+      "y": 270
+    },
+    "facing=south": {
+      "model": "gems:block/ruby_wall_torch",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "gems:block/ruby_wall_torch",
+      "y": 180
+    }
+  }
+}

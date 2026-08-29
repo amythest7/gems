@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "rings",
+  "key": {
+    "G": "minecraft:gold_ingot"
+  },
+  "pattern": [
+    "GGG",
+    "G G",
+    "GGG"
+  ],
+  "result": {
+    "id": "gems:gold_ring"
+  }
+}

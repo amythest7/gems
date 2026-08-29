@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_justice_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:topaz_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.justice.description"
+    },
+    "icon": {
+      "id": "gems:topaz_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.justice.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_justice_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

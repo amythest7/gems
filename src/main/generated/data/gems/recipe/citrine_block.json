@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "gems:citrine",
+    "gems:citrine",
+    "gems:citrine",
+    "gems:citrine",
+    "gems:citrine",
+    "gems:citrine",
+    "gems:citrine",
+    "gems:citrine",
+    "gems:citrine"
+  ],
+  "result": {
+    "id": "gems:citrine_block"
+  }
+}

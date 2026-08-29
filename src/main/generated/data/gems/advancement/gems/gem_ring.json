@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_ring": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:gold_ring_diamond"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.gem_ring.description"
+    },
+    "icon": {
+      "id": "gems:gold_ring_diamond"
+    },
+    "title": {
+      "translate": "advancement.gems.gem_ring.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_ring"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

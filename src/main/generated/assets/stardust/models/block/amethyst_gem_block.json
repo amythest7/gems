@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "stardust:block/amethyst_gem_block"
-  }
-}

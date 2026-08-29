@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_stardust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:stardust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gems:crystallised_stardust_from_stardust_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_stardust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gems:crystallised_stardust_from_stardust_stonecutting"
+    ]
+  }
+}

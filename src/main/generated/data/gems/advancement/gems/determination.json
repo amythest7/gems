@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_determination_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:ruby_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.determination.description"
+    },
+    "icon": {
+      "id": "gems:ruby_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.determination.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_determination_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

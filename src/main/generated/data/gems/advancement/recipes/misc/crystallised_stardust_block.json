@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crystallised_stardust": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:crystallised_stardust"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "gems:crystallised_stardust_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_crystallised_stardust"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "gems:crystallised_stardust_block"
+    ]
+  }
+}

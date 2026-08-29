@@ -1,0 +1,34 @@
+{
+  "parent": "gems:gems/determination",
+  "criteria": {
+    "has_omega_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:omega_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.omega.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "id": "gems:omega_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.omega.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_omega_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

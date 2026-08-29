@@ -1,0 +1,32 @@
+{
+  "parent": "gems:gems/root",
+  "criteria": {
+    "has_integrity_soul": {
+      "conditions": {
+        "items": [
+          {
+            "items": "gems:sapphire_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": {
+      "translate": "advancement.gems.integrity.description"
+    },
+    "icon": {
+      "id": "gems:sapphire_heart"
+    },
+    "title": {
+      "translate": "advancement.gems.integrity.title"
+    }
+  },
+  "requirements": [
+    [
+      "has_integrity_soul"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

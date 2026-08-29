@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "gems:unrefined_stardust",
+  "result": {
+    "id": "gems:stardust"
+  }
+}

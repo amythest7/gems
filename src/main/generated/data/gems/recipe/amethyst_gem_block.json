@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "gems:amethyst",
+    "gems:amethyst",
+    "gems:amethyst",
+    "gems:amethyst",
+    "gems:amethyst",
+    "gems:amethyst",
+    "gems:amethyst",
+    "gems:amethyst",
+    "gems:amethyst"
+  ],
+  "result": {
+    "id": "gems:amethyst_gem_block"
+  }
+}

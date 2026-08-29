@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "gems:block/sapphire_lantern"
+    },
+    "hanging=true": {
+      "model": "gems:block/sapphire_lantern_hanging"
+    }
+  }
+}

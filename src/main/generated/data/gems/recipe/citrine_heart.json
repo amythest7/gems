@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "souls",
+  "key": {
+    "C": "gems:crystallised_stardust",
+    "N": "minecraft:nether_star",
+    "R": "gems:citrine"
+  },
+  "pattern": [
+    "RCR",
+    "CNC",
+    "RCR"
+  ],
+  "result": {
+    "id": "gems:citrine_heart"
+  }
+}

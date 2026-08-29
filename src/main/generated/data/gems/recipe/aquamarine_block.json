@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "gems:aquamarine",
+    "gems:aquamarine",
+    "gems:aquamarine",
+    "gems:aquamarine",
+    "gems:aquamarine",
+    "gems:aquamarine",
+    "gems:aquamarine",
+    "gems:aquamarine",
+    "gems:aquamarine"
+  ],
+  "result": {
+    "id": "gems:aquamarine_block"
+  }
+}

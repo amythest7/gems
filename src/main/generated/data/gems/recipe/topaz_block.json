@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    "gems:topaz",
+    "gems:topaz",
+    "gems:topaz",
+    "gems:topaz",
+    "gems:topaz",
+    "gems:topaz",
+    "gems:topaz",
+    "gems:topaz",
+    "gems:topaz"
+  ],
+  "result": {
+    "id": "gems:topaz_block"
+  }
+}

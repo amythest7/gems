@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "gems:block/aquamarine_lantern"
+    },
+    "hanging=true": {
+      "model": "gems:block/aquamarine_lantern_hanging"
+    }
+  }
+}

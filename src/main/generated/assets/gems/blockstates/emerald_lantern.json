@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "gems:block/emerald_lantern"
+    },
+    "hanging=true": {
+      "model": "gems:block/emerald_lantern_hanging"
+    }
+  }
+}

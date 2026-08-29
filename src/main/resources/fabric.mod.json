@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "stardust",
+	"id": "gems",
 	"version": "${version}",
-	"name": "Stardust",
+	"name": "Gems",
 	"description": "",
 	"authors": [
 		"Amythest"
@@ -11,23 +11,23 @@
 		"homepage": "",
 		"sources": "https://github.com/amythest7/stardust"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/stardust/icon.png",
+	"license": "MIT",
+	"icon": "assets/gems/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.amy.stardust.Stardust"
+			"net.amy.gems.Gems"
 		],
 		"client": [
-			"net.amy.stardust.StardustClient",
-			"net.amy.stardust.client.rendering.hud.HudRenderingEntrypoint"
+          "net.amy.gems.GemsClient",
+			"net.amy.gems.client.rendering.hud.HudRenderingEntrypoint"
 		],
 		"fabric-datagen": [
-			"net.amy.stardust.StardustDataGenerator"
+			"net.amy.gems.GemsDataGenerator"
 		]
 	},
 	"mixins": [
-		"stardust.mixins.json"
+		"gems.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.19.2",

@@ -1,8 +1,0 @@
-{
-  "comparator_output": 12,
-  "description": {
-    "translate": "jukebox_song.stardust.music_disc_destructor"
-  },
-  "length_in_seconds": 307.0,
-  "sound_event": "stardust:destructor"
-}

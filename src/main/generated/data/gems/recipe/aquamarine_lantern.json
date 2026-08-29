@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "gem_lanterns",
+  "ingredients": [
+    "gems:empty_lantern",
+    "gems:aquamarine"
+  ],
+  "result": {
+    "id": "gems:aquamarine_lantern"
+  }
+}

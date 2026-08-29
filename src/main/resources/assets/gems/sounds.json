@@ -1,0 +1,10 @@
+{
+  "destructor": {
+    "sounds": [
+      {
+        "name": "gems:destructor",
+        "stream": true
+      }
+    ]
+  }
+}
