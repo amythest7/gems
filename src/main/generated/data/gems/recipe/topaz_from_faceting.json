@@ -1,0 +1,7 @@
+{
+  "type": "gems:gem_faceting",
+  "ingredient": "gems:raw_topaz",
+  "result": {
+    "id": "gems:topaz"
+  }
+}

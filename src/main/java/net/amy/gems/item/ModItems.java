@@ -44,6 +44,7 @@ public class ModItems {
     public static Item RAW_CITRINE = registerItem("raw_citrine", Item::new);
     public static Item RAW_SPINEL = registerItem("raw_spinel", Item::new);
     public static Item RAW_AQUAMARINE = registerItem("raw_aquamarine", Item::new);
+    public static Item RAW_DIAMOND = registerItem("raw_diamond", Item::new);
 
     public static Item RUBY_HEART = registerItem("ruby_heart", properties -> new SoulItem(properties.stacksTo(1)));
     public static Item SAPPHIRE_HEART = registerItem("sapphire_heart", properties -> new SoulItem(properties.stacksTo(1)));

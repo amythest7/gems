@@ -1,12 +1,16 @@
 package net.amy.gems.datagen.advancement;
 
+import eu.pb4.trinkets.api.TrinketsApi;
 import net.amy.gems.item.ModItems;
+import net.amy.gems.item.custom.RingItem;
+import net.amy.gems.item.custom.SoulItem;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementHolder;
 import net.minecraft.advancements.AdvancementRequirements;
 import net.minecraft.advancements.AdvancementType;
 import net.minecraft.advancements.predicates.ItemPredicate;
 import net.minecraft.advancements.triggers.InventoryChangeTrigger;
+import net.minecraft.client.Minecraft;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -16,7 +20,9 @@ import net.minecraft.data.advancements.AdvancementProvider;
 import net.minecraft.data.advancements.AdvancementSubProvider;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 import java.util.List;
@@ -227,7 +233,7 @@ public class ModAdvancementsProvider extends AdvancementProvider {
                     .addCriterion("has_doki_soul", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(items, ModItems.SPINEL_HEART)))
                     .save(output, MOD_ID + ":gems/doki");
 
-            /*AdvancementHolder maxDoki = Advancement.Builder.advancement()
+            AdvancementHolder maxDoki = Advancement.Builder.advancement()
                     .parent(doki)
                     .display(
                             ModItems.SPINEL_HEART,
@@ -243,7 +249,7 @@ public class ModAdvancementsProvider extends AdvancementProvider {
                     .addCriterion("has_max_doki_soul", InventoryChangeTrigger.TriggerInstance.hasItems(ItemPredicate.Builder.item().of(items, ModItems.SPINEL_HEART)))
 
 
-                    .save(output, MOD_ID + ":gems/max_doki");*/
+                    .save(output, MOD_ID + ":gems/max_doki");
 
             AdvancementHolder omega = Advancement.Builder.advancement()
                     .parent(determination)
@@ -270,5 +276,7 @@ public class ModAdvancementsProvider extends AdvancementProvider {
 
             return advancement;
         }
+
     }
+
 }

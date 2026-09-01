@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "gem_faceter",
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "S": "minecraft:smooth_stone"
+  },
+  "pattern": [
+    "   ",
+    "III",
+    "SSS"
+  ],
+  "result": {
+    "id": "gems:gem_faceter"
+  }
+}

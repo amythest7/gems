@@ -86,6 +86,25 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(AQUAMARINE_ORE, createOreDrop(AQUAMARINE_ORE, RAW_AQUAMARINE));
         add(DEEPSLATE_AQUAMARINE_ORE, createOreDrop(DEEPSLATE_AQUAMARINE_ORE, RAW_AQUAMARINE));
 
+        /*add(SAPPHIRE_ORE, createOreDrop(SAPPHIRE_ORE, SAPPHIRE));
+        add(RUBY_ORE, createOreDrop(RUBY_ORE, RUBY));
+        add(DEEPSLATE_SAPPHIRE_ORE, createOreDrop(DEEPSLATE_SAPPHIRE_ORE, SAPPHIRE));
+        add(DEEPSLATE_RUBY_ORE, createOreDrop(DEEPSLATE_RUBY_ORE, RUBY));
+
+        add(AMETHYST_ORE, createOreDrop(AMETHYST_ORE, AMETHYST));
+        add(TOPAZ_ORE, createOreDrop(TOPAZ_ORE, TOPAZ));
+        add(DEEPSLATE_AMETHYST_ORE, createOreDrop(DEEPSLATE_AMETHYST_ORE, AMETHYST));
+        add(DEEPSLATE_TOPAZ_ORE, createOreDrop(DEEPSLATE_TOPAZ_ORE, TOPAZ));
+
+        add(CITRINE_ORE, createOreDrop(CITRINE_ORE, CITRINE));
+        add(DEEPSLATE_CITRINE_ORE, createOreDrop(DEEPSLATE_CITRINE_ORE, CITRINE));
+
+        add(SPINEL_ORE, createOreDrop(SPINEL_ORE, SPINEL));
+        add(DEEPSLATE_SPINEL_ORE, createOreDrop(DEEPSLATE_SPINEL_ORE, SPINEL));
+
+        add(AQUAMARINE_ORE, createOreDrop(AQUAMARINE_ORE, AQUAMARINE));
+        add(DEEPSLATE_AQUAMARINE_ORE, createOreDrop(DEEPSLATE_AQUAMARINE_ORE, AQUAMARINE));*/
+
 
     }
 

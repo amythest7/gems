@@ -1,5 +1,6 @@
 package net.amy.gems.item.custom;
 
+import eu.pb4.trinkets.api.TrinketsApi;
 import eu.pb4.trinkets.api.callback.TrinketCallback;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -25,7 +26,9 @@ public class SoulItem extends Item implements TrinketCallback {
         super.inventoryTick(itemStack, level, owner, slot);
         if(!level.isClientSide()) {
             if(owner instanceof Player player) {
+                if (TrinketsApi.getAttachment(player).isEquipped(t -> t.getItem() instanceof SoulItem, true)) {
                     player.addEffect(new MobEffectInstance(MobEffects.HEALTH_BOOST, 600, 4, true, false));
+                }
             }
         }
     }

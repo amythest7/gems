@@ -1,6 +1,8 @@
 package net.amy.gems.datagen;
 
+import net.amy.gems.Gems;
 import net.amy.gems.block.ModBlocks;
+import net.amy.gems.datagen.recipe.GemFacetingRecipeBuilder;
 import net.amy.gems.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
@@ -12,8 +14,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CampfireCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -41,6 +45,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 simpleCookingRecipe("campfire_cooking", CampfireCookingRecipe::new, 600, ModItems.UNREFINED_STARDUST, ModItems.STARDUST, 0.35F);
 
                 twoByTwoPacker(RecipeCategory.MISC, ModBlocks.CRYSTALLISED_STARDUST_BLOCK, ModItems.CRYSTALLISED_STARDUST);
+
+                rawGemFacetingRecipe(this, "ruby", ModItems.RAW_RUBY, ModItems.RUBY, output);
+                rawGemFacetingRecipe(this, "sapphire", ModItems.RAW_SAPPHIRE, ModItems.SAPPHIRE, output);
+                rawGemFacetingRecipe(this, "emerald", ModItems.RAW_EMERALD, Items.EMERALD, output);
+                rawGemFacetingRecipe(this, "diamond", ModItems.RAW_DIAMOND, Items.DIAMOND, output);
+                rawGemFacetingRecipe(this, "citrine", ModItems.RAW_CITRINE, ModItems.CITRINE, output);
+                rawGemFacetingRecipe(this, "topaz", ModItems.RAW_TOPAZ, ModItems.TOPAZ, output);
+                rawGemFacetingRecipe(this, "amethyst", ModItems.RAW_AMETHYST, ModItems.AMETHYST, output);
+                rawGemFacetingRecipe(this, "spinel", ModItems.RAW_SPINEL, ModItems.SPINEL, output);
+                rawGemFacetingRecipe(this, "aquamarine", ModItems.RAW_AQUAMARINE, ModItems.AQUAMARINE, output);
+
 
 
                 shaped(RecipeCategory.MISC, ModItems.GOLD_RING)
@@ -71,6 +86,16 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('R', ModItems.GOLD_RING)
                         .unlockedBy(getHasName(Items.NETHERITE_SCRAP), has(Items.NETHERITE_SCRAP))
                         .group("rings")
+                        .save(output);
+
+                shaped(RecipeCategory.MISC, ModBlocks.GEM_FACETER)
+                        .pattern("   ")
+                        .pattern("III")
+                        .pattern("SSS")
+                        .define('I', Items.IRON_INGOT)
+                        .define('S', Blocks.SMOOTH_STONE)
+                        .unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT))
+                        .group("gem_faceter")
                         .save(output);
 
                 shaped(RecipeCategory.MISC, ModItems.OMEGA_HEART)
@@ -204,6 +229,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .unlockedBy(getHasName(ring), provider.has(ring))
                 .group("rings")
                 .save(output);
+    }
+
+    private void rawGemFacetingRecipe(RecipeProvider provider, String name, Item input, Item outputItem, RecipeOutput output) {
+        GemFacetingRecipeBuilder.gemFacetingRecipe(RecipeCategory.MISC, Ingredient.of(input), outputItem)
+                .unlockedBy(getHasName(input), provider.has(input))
+                .save(output, "gems:" + name + "_from_faceting");
     }
 
     @Override

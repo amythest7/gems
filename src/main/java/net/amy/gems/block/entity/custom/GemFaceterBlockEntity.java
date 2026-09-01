@@ -103,7 +103,7 @@ public class GemFaceterBlockEntity extends BlockEntity implements ExtendedMenuPr
 
     @Override
     public Component getDisplayName() {
-        return Component.translatable("block.stardust.gem_faceter");
+        return Component.translatable("block.gems.gem_faceter");
     }
 
     @Override
